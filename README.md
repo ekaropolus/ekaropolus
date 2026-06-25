@@ -53,12 +53,29 @@ My background is in physics, sustainability, computational systems, network theo
 
 Older repositories in this account include coursework, forks, and historical experiments. They are being progressively archived, moved, or documented.
 
+## Technical Portfolio
+
+This profile includes a public technical portfolio that goes deeper than a
+traditional CV:
+
+- [Research lines](portfolio/research-lines.md)
+- [Capabilities](portfolio/capabilities.md)
+- [Product systems](portfolio/product-systems.md)
+- [Architecture patterns](portfolio/architecture-patterns.md)
+- [Case index](portfolio/case-index.md)
+- [Client ID protocol](portfolio/client-id-protocol.md)
+
+The portfolio uses anonymized IDs for client, city, and institutional work when
+the public name should not appear on GitHub. The private mapping from ID to real
+organization is intentionally kept out of Git.
+
 ## Public Links
 
 - GitHub: [@ekaropolus](https://github.com/ekaropolus)
 - LinkedIn: [Edgar Valdes](https://www.linkedin.com/in/ekaropolus/)
+- ORCID: [0000-0003-2601-4825](https://orcid.org/0000-0003-2601-4825)
+- Google Scholar: [Edgar Antonio Valdes Porras](https://scholar.google.com/citations?hl=en&user=2EtMDXgAAAAJ)
 - X / Twitter: [@ekaropolus](https://twitter.com/ekaropolus)
 - Hadox: [hadox.org](https://hadox.org)
 - Polisplexity: [polisplexity.tech](https://polisplexity.tech)
 - LabLab profile: [@ekaropolus](https://lablab.ai/u/%40ekaropolus)
-
