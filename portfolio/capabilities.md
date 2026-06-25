@@ -1,131 +1,37 @@
 # Capabilities
 
-## Digital Twins and Urban Intelligence
+This is an index. Each capability has its own technical note.
 
-- Local digital twin architecture.
-- Geospatial data ingestion and normalization.
-- Semantic city layers.
-- Public-data baselines.
-- Building, road, mobility, environmental, and service layers.
-- Scenario design for planning, resilience, energy, waste, and operations.
-- Human-readable decision workflows for non-technical city teams.
+The purpose is to make the portfolio reviewable as a real technical record, not
+as a short CV skills list.
 
-Technical depth:
+## Current core capabilities
 
-- define base twin schemas for city geometry, road networks, buildings,
-  boundaries, green-blue structures, and civic anchors;
-- design support-unit strategies across city, state, AGEB, manzana, hex, and
-  geofence layers;
-- connect service packs to specific operational questions rather than generic
-  visualizations;
-- distinguish presence/inspection views from analytical decision surfaces;
-- map public data constraints, licensing issues, missing data, and validation
-  points;
-- design exportable evidence bundles for city partners, grant evaluators, and
-  technical collaborators.
+- [Open Local Digital Twin Architecture](capabilities/open-local-digital-twin-architecture.md)
+- [Geospatial Data Engineering and Semantic City Layers](capabilities/geospatial-data-engineering-semantic-city-layers.md)
+- [Scientific Intelligence and Evidence-to-Decision Systems](capabilities/scientific-intelligence-evidence-to-decision.md)
+- [AI Agents, RAG, and Human-in-the-Loop Workflows](capabilities/ai-agents-rag-human-in-the-loop.md)
+- [Urban Scaling, SAMI, and Research Software](capabilities/urban-scaling-sami-research-software.md)
+- [Complex Systems, Simulation, and Scenario Design](capabilities/complex-systems-simulation-scenario-design.md)
+- [Graph and Network Modeling](capabilities/graph-network-modeling.md)
+- [Cloud, DevOps, and Product Infrastructure](capabilities/cloud-devops-product-infrastructure.md)
+- [HPC and Parallel Processing](capabilities/hpc-parallel-processing.md)
+- [Public-Sector Innovation and Institutional Design](capabilities/public-sector-innovation-institutional-design.md)
+- [Hackathon and Challenge Program Design](capabilities/hackathon-challenge-program-design.md)
 
-## AI and Scientific Intelligence
+## Past capabilities that still matter
 
-- AI-assisted evidence review.
-- Retrieval-augmented generation with source discipline.
-- Agent workflows for research, policy, and institutional decision-making.
-- Source ledgers and data contracts.
-- Structured synthesis from PDFs, spreadsheets, emails, datasets, and reports.
-- Technical concept notes, research briefs, and data-room preparation.
+- [Enterprise Systems, SAP, ABAP, and Compliance Architecture](capabilities/enterprise-systems-sap-abap-compliance.md)
+- [Data Integration, Migration, and Operational Reporting](capabilities/data-integration-migration-operational-reporting.md)
 
-Technical depth:
+## How to read these notes
 
-- build source ledgers that preserve URLs, files, timestamps, checksums,
-  extraction status, and review state;
-- separate raw evidence from normalized entities and enriched interpretations;
-- design RAG workflows where generated answers cite source fragments and expose
-  uncertainty;
-- convert unstructured material into institution, researcher, capability,
-  project, opportunity, and relationship maps;
-- prepare public and private exports from the same evidence base without leaking
-  sensitive context.
+Each capability note separates:
 
-## Complex Systems and Simulation
-
-- Agent-based modeling.
-- Graph and network modeling.
-- Urban scaling workflows.
-- Support-unit comparisons.
-- System dynamics and scenario framing.
-- Model interpretation for public-sector stakeholders.
-
-Technical depth:
-
-- translate social or institutional problems into state variables, actors,
-  interactions, constraints, and measurable outputs;
-- compare support units and aggregation levels before claiming a scaling result;
-- use graph models to represent institutional, policy, service, and ecosystem
-  structures;
-- design scenario experiments that can be explained to non-technical
-  decision-makers;
-- keep model assumptions explicit enough for policy and research review.
-
-## Research Software and Data Engineering
-
-- Python research tooling.
-- Postgres / PostGIS.
-- OSM, INEGI, DENUE, and public-data workflows.
-- Reproducible scripts, build systems, and documentation.
-- Monograph-to-code traceability.
-- CI/CD and deployment-oriented documentation.
-
-Technical depth:
-
-- define reproducible runs through manifests and command-line workflows;
-- use data contracts for input and output tables;
-- keep generated artifacts reproducible from scripts rather than manual
-  notebooks only;
-- maintain README, operations, architecture, and reviewer documentation;
-- design public repositories that can be reviewed without private operator
-  context.
-
-## Cloud, HPC, and Infrastructure
-
-- Docker and containerized development.
-- VPS and Linux deployment.
-- GitHub / Gitea / Drone workflows.
-- Google Cloud, AWS, Azure, BigQuery, Databricks, and related ecosystems.
-- HPC adoption roadmaps and parallel-processing learning paths.
-
-Technical depth:
-
-- identify workloads that benefit from parallelism: geospatial tiling, OSM
-  network extraction, batch simulations, model sweeps, embedding generation,
-  evidence processing, and report builds;
-- separate local workstation workflows from VPS, container, and HPC execution
-  modes;
-- document reproducible run commands and deployment boundaries;
-- evaluate when OpenMPI, multiprocessing, containers, or managed cloud services
-  are the right level of complexity.
-
-## Public-Sector and Innovation Programs
-
-- Public-sector research design.
-- Institutional diagnosis.
-- Government simplification and observatory design.
-- Hackathon and challenge methodology.
-- Innovation ecosystem mapping.
-- International opportunity scanning and concept-note development.
-
-Technical depth:
-
-- convert a policy or institutional need into a work-package structure;
-- define evidence, stakeholders, risks, acceptance criteria, and review cadence;
-- build concept notes that are technically specific enough for partners while
-  remaining accessible to non-technical sponsors;
-- design hackathons and challenges as project pipelines, not only events;
-- keep post-event outputs measurable: prototypes, datasets, talent maps, vendor
-  discovery, and follow-up implementation routes.
-
-## Enterprise Systems
-
-- SAP ERP and ABAP.
-- SAP HANA / SQL / integration work.
-- Financial, logistics, compliance, and reporting workflows.
-- Large enterprise transformation contexts.
-- Data integration and process automation.
+- current use;
+- past experience;
+- technical methods;
+- stack and tools;
+- outputs;
+- public or anonymized evidence;
+- what should stay private.
