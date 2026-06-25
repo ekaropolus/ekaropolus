@@ -27,6 +27,7 @@ The purpose of this portfolio is to make that work legible:
 ## Navigation
 
 - [Research lines](research-lines.md)
+- [Project and proposal inventory](project-inventory.md)
 - [Major programs](programs/local-digital-twins.md)
 - [Organization footprint and anonymized client profiles](client-profiles.md)
 - [Capabilities](capabilities.md)
