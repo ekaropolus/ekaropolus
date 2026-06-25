@@ -61,6 +61,22 @@ city sources
 - European local digital twin cohort strategy.
 - City-fragment XR / analytical 3D modes.
 
+## Current program depth
+
+The Local Digital Twins work now includes more than product design. It has
+covered a multi-city and multi-partner operating model with:
+
+- city-specific service framing for planning, resilience, reconstruction,
+  mobility, infrastructure, and continuity of services;
+- work-strand interpretation for existing LDT interconnection, new LDT creation,
+  and AI services for LDT toolboxes;
+- technical diligence around GIS, BIM/IFC, PostGIS, 2D/3D viewers, semantic
+  interoperability, data spaces, and scenario orchestration;
+- partner-role mapping across city authorities, eligible European companies,
+  exploitation/adoption partners, AI/simulation partners, and research support;
+- budget, ownership-control, commitment-letter, and documentation workflows
+  needed to make a technical architecture fundable and auditable.
+
 ## Past foundations
 
 - Enterprise architecture and systems integration.
@@ -76,6 +92,10 @@ city sources
 - Base twin / add-on pack decomposition.
 - Partner-facing technical narratives.
 - City and cohort role maps.
+- Technical FAQs for city and partner conversations.
+- Execution-requirement registers and budget logic.
+- Public/private data-room structures.
+- Work-strand one-pagers and proposal support materials.
 
 ## Public / anonymized evidence
 
@@ -83,6 +103,7 @@ city sources
 - `CL-CITY-001` - European Local Digital Twin cohort strategy.
 - `CL-CITY-002` - Socio-Physical Digital Twin for Waste.
 - `CL-CITY-003` - Planning-ready city twin workflow.
+- `portfolio/programs/local-digital-twins.md` - consolidated program dossier.
 
 ## Private boundary
 

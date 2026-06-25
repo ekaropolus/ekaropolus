@@ -44,6 +44,7 @@ Priority case studies:
 - [PRD-002 - Hadox Scientific Intelligence](case-studies/PRD-002-hadox-scientific-intelligence.md)
 - [CL-GOV-003 - HPC roadmap](case-studies/CL-GOV-003-hpc-roadmap.md)
 - [CL-CITY-001 - European LDT cohort](case-studies/CL-CITY-001-european-ldt-cohort.md)
+- [Local Digital Twins Program dossier](programs/local-digital-twins.md)
 - [CL-ENT-001 - Enterprise systems](case-studies/CL-ENT-001-enterprise-systems.md)
 - [CL-STARTUP-003 - Hackathon methodology](case-studies/CL-STARTUP-003-hackathon-methodology.md)
 

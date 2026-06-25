@@ -27,6 +27,7 @@ The purpose of this portfolio is to make that work legible:
 ## Navigation
 
 - [Research lines](research-lines.md)
+- [Major programs](programs/local-digital-twins.md)
 - [Capabilities](capabilities.md)
 - [Product systems](product-systems.md)
 - [Architecture patterns](architecture-patterns.md)
@@ -68,3 +69,10 @@ This is not a marketing portfolio. Each page should answer technical questions:
 
 The public version should be technically dense enough to be useful, while still
 protecting private clients and partners.
+
+## Major programs
+
+- [Local Digital Twins Program](programs/local-digital-twins.md) - Polisplexity,
+  Twin Base Studio, European LDT call strategy, city cohort design, GIS/BIM/IFC,
+  PostGIS, semantic interoperability, partner diligence, and multi-city service
+  scenarios.

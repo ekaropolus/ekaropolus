@@ -60,6 +60,7 @@ traditional CV:
 
 - Public site: [https://ekaropolus.github.io/ekaropolus/](https://ekaropolus.github.io/ekaropolus/)
 - [Research lines](portfolio/research-lines.md)
+- [Major programs](portfolio/programs/local-digital-twins.md)
 - [Capabilities](portfolio/capabilities.md)
 - [Product systems](portfolio/product-systems.md)
 - [Architecture patterns](portfolio/architecture-patterns.md)
