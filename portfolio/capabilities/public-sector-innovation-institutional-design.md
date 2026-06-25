@@ -55,7 +55,7 @@ institutional programs.
 - `CL-GOV-001` - public data / education-culture service graph.
 - `CL-GOV-002` - governance and public policy laboratory diagnosis.
 - `CL-GOV-003` - HPC roadmap.
-- `CL-DEV-001` - women digital entrepreneurs evidence project.
+- `CL-DEV-001` - digital entrepreneurship and inclusion organizations route.
 
 ## Private boundary
 

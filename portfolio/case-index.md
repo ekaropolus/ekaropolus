@@ -2,8 +2,8 @@
 
 This index is public-facing and anonymized. Some rows refer to public work;
 others use client or partner IDs according to the [Client ID Protocol](client-id-protocol.md).
-The narrative profiles for these IDs are maintained in
-[Anonymized Client and Counterpart Profiles](client-profiles.md).
+The broader organization footprint and narrative profiles for these IDs are
+maintained in [Organization Footprint and Anonymized Client Profiles](client-profiles.md).
 
 | ID | Area | Public title | Status | Public detail level |
 | --- | --- | --- | --- | --- |
@@ -14,7 +14,7 @@ The narrative profiles for these IDs are maintained in
 | `RSH-002` | Quantum technologies | Quantum Technologies National Strategy | Active / conference output | Public repository |
 | `CL-GOV-001` | Public-sector data / education | Graph and big-data model for public education/culture services | Completed | Anonymized |
 | `CL-GOV-002` | Public-sector innovation | Governance and public policy laboratory diagnosis | Completed | Anonymized |
-| `CL-DEV-001` | Digital entrepreneurship / gender | Women digital entrepreneurs evidence project | Completed | Anonymized |
+| `CL-DEV-001` | Digital entrepreneurship / inclusion | Digital entrepreneurship and inclusion organizations route | Completed / verify organizations | Anonymized / partially public after verification |
 | `CL-GOV-003` | HPC / regional development | High-performance computing diagnostic and roadmap | Completed | Anonymized |
 | `CL-ENT-001` | Enterprise systems | Large-scale SAP, data, integration, and compliance programs | Completed | Anonymized aggregate |
 | `CL-CITY-001` | Local digital twins | City and cohort strategy for European LDT opportunities | Active | Anonymized / partner-sensitive |

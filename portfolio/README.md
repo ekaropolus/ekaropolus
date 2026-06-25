@@ -28,7 +28,7 @@ The purpose of this portfolio is to make that work legible:
 
 - [Research lines](research-lines.md)
 - [Major programs](programs/local-digital-twins.md)
-- [Anonymized client profiles](client-profiles.md)
+- [Organization footprint and anonymized client profiles](client-profiles.md)
 - [Capabilities](capabilities.md)
 - [Product systems](product-systems.md)
 - [Architecture patterns](architecture-patterns.md)

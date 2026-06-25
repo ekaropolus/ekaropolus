@@ -1,572 +1,287 @@
-# Anonymized Client and Counterpart Profiles
-
-This layer describes the types of clients, counterparts, and institutional
-contexts behind the case-study IDs. It is intentionally anonymized. The private
-ID-to-name mapping remains outside Git.
-
-Each profile is written to be useful for readers who need to understand the
-kind of challenge, operating environment, and technical judgment involved
-without exposing the client, partner, or contact.
-
-## Profile Format
-
-- **Public descriptor:** what kind of organization it was.
-- **Context:** why the work mattered.
-- **Observed challenges:** what the organization or ecosystem was facing.
-- **Work performed or prepared:** what was built, analyzed, designed, or
-  packaged.
-- **Capabilities demonstrated:** what this says about the portfolio.
-- **Public boundary:** what should remain private.
-
----
-
-## CL-ENT-001 - Large Enterprise Systems Portfolio
-
-**Public descriptor:** Global and regional enterprise organizations with
-production-critical ERP, finance, logistics, procurement, sales, and compliance
-systems. This includes work that can be described publicly as global retail,
-consumer, logistics, and service-enterprise environments without naming specific
-companies.
-
-**Context:** These organizations depend on enterprise systems that cannot stop
-while they are being changed. Processes, tax rules, reporting, procurement,
-sales, inventory, custom extensions, and integrations all interact with real
-financial and operational risk.
-
-**Observed challenges:**
-
-- fragmented SAP and non-SAP processes;
-- custom ABAP and integration logic accumulated over years;
-- electronic invoicing, tax, and compliance requirements;
-- migration and reporting pressure during platform transitions;
-- interfaces between finance, logistics, procurement, sales, and operations;
-- production support in environments where errors affect real business flows.
-
-**Work performed or prepared:**
-
-- ABAP, ABAP Objects, forms, exits, BADI/BAPI, IDoc, workflow, and reporting
-  work;
-- FI, SD, MM, CO, SRM/CRM, HANA, and related process support;
-- data migration and interface support;
-- compliance and electronic invoicing logic;
-- production issue analysis and large-team technical delivery.
-
-**Capabilities demonstrated:**
-
-- operating inside high-stakes production systems;
-- translating process complexity into technical architecture;
-- respecting auditability, traceability, and change control;
-- carrying enterprise integration lessons into public-sector and city systems.
-
-**Public boundary:** Do not name enterprise clients, exact systems, internal
-landscapes, compliance incidents, or commercial details.
-
----
-
-## CL-GOV-001 - Public Education and Culture Data Institution
-
-**Public descriptor:** Mexican public-sector institution working with education,
-culture, library, collection, or public-service data.
-
-**Context:** Large public datasets often exist as operational records rather
-than decision infrastructure. The work required converting dispersed public
-records into a graph and big-data model capable of revealing service structure,
-coverage, relationships, and analytical opportunities.
-
-**Observed challenges:**
-
-- messy catalog and administrative data;
-- weak entity normalization;
-- limited interoperability between operational records and strategic analysis;
-- need to identify communities, themes, flows, and public-service patterns;
-- difficulty turning institutional archives into policy-relevant intelligence.
-
-**Work performed or prepared:**
-
-- data modeling for graph and big-data analysis;
-- entity normalization and relationship mapping;
-- public-service and cultural/educational pattern analysis;
-- technical framing for dashboards, evidence layers, and institutional
-  intelligence.
-
-**Capabilities demonstrated:**
-
-- graph thinking for public-sector datasets;
-- ability to work with noisy institutional records;
-- conversion of archive-like data into decision-ready structures;
-- bridge between data engineering, policy, and public-service design.
-
-**Public boundary:** Keep the institution name, raw records, and exact dataset
-details private unless explicitly approved.
-
----
-
-## CL-GOV-002 - Public Policy and Innovation Laboratory
-
-**Public descriptor:** Government innovation, policy, or institutional
-transformation unit in Mexico.
-
-**Context:** Public innovation labs often have ambition, political visibility,
-and stakeholder pressure, but weak operating models. The work focused on how to
-diagnose the institution as a system: mandate, governance, portfolio, partners,
-capabilities, evidence, and delivery model.
-
-**Observed challenges:**
-
-- unclear institutional scope;
-- tension between communication, policy, and delivery;
-- weak portfolio discipline;
-- limited evidence of impact;
-- need for better governance, partner management, and operating routines.
-
-**Work performed or prepared:**
-
-- institutional diagnosis;
-- governance and operating-model analysis;
-- project portfolio framing;
-- impact, stakeholder, and evidence logic;
-- recommendations for a more coherent innovation function.
-
-**Capabilities demonstrated:**
-
-- public-sector organizational analysis;
-- translation of institutional ambiguity into actionable operating models;
-- ability to connect governance, data, delivery, and public value.
-
-**Public boundary:** Do not publish internal political context, individual
-names, or diagnostic details that identify the institution.
-
----
-
-## CL-DEV-001 - Women Digital Entrepreneurs Evidence Project
-
-**Public descriptor:** International cooperation, development, or public-interest
-program focused on women, digital entrepreneurship, and economic inclusion.
-
-**Context:** Programs supporting women entrepreneurs often collect stories,
-activities, and indicators, but struggle to convert them into a stronger
-evidence base for policy, funding, and program improvement.
-
-**Observed challenges:**
-
-- scattered qualitative and quantitative evidence;
-- difficulty connecting narratives to measurable outcomes;
-- need to respect privacy and dignity while producing usable analysis;
-- weak continuity between program reporting and strategic learning.
-
-**Work performed or prepared:**
-
-- evidence-structure design;
-- analysis of digital entrepreneurship and inclusion pathways;
-- synthesis for program learning and decision support;
-- framing of gender, technology, and development outcomes.
-
-**Capabilities demonstrated:**
-
-- responsible handling of social-impact evidence;
-- conversion of program material into structured intelligence;
-- ability to work across gender, entrepreneurship, policy, and data.
-
-**Public boundary:** Do not expose participant identities, sensitive stories,
-partner names, or raw evaluation data.
-
----
-
-## CL-GOV-003 - Regional Advanced-Computing and HPC Institution
-
-**Public descriptor:** Public-sector, research, or regional innovation
-institution with access to high-performance computing capability.
-
-**Context:** Advanced computing infrastructure can remain underused if there is
-no adoption model, training pipeline, industrial use-case strategy, or clear
-business model connecting research computing to regional economic development.
-
-**Observed challenges:**
-
-- unclear route from supercomputing capacity to productive-sector adoption;
-- weak pipeline of users and workloads;
-- need for certification, training, and advanced software capabilities;
-- lack of explicit business model and public-private collaboration structure;
-- opportunity to connect HPC with digital twins, geospatial processing, AI, and
-  simulation.
-
-**Work performed or prepared:**
-
-- HPC diagnostic and regional roadmap;
-- industrial and research use-case mapping;
-- business-model and talent-strategy analysis;
-- advanced software laboratory concept;
-- later extension into OpenMPI, geospatial tiling, simulations, and digital
-  twin workloads.
-
-**Capabilities demonstrated:**
-
-- ability to connect infrastructure, talent, research, and economic strategy;
-- translation of advanced-computing capacity into practical adoption pathways;
-- technical judgment around parallel processing and regional innovation.
-
-**Public boundary:** Keep institutional identifiers, credentials, system access,
-and operational details private.
-
----
-
-## CL-CITY-001 - European Local Digital Twin Cohort
-
-**Public descriptor:** European city-authority and technical-partner ecosystem
-around Local Digital Twin funding and deployment opportunities.
-
-**Context:** A successful Local Digital Twin proposal requires more than a
-product. It requires authority owners, eligible entities, technical partners,
-data governance, interoperability, work-strand fit, budgets, ownership-control
-declarations, and a credible delivery plan.
-
-**Observed challenges:**
-
-- different city maturity levels;
-- fragmented partner roles;
-- eligibility and legal-vehicle constraints;
-- need to connect GIS, BIM, PostGIS, standards, AI, scenarios, and public
-  services;
-- need to translate partner conversations into an auditable workplan.
-
-**Work performed or prepared:**
-
-- city and partner concept notes;
-- work-strand interpretation for WS1, WS2, and WS3;
-- B2Match intelligence;
-- partner-role and due-diligence mapping;
-- technical FAQ and one-pagers;
-- budget and execution-requirement registers;
-- Local Digital Twins Program dossier.
-
-**Capabilities demonstrated:**
-
-- multi-city technical program architecture;
-- European public-funding strategy;
-- standards-aware digital twin design;
-- partner-sensitive communication and public/private knowledge management.
-
-**Public boundary:** Do not publish raw CRM, private contacts, draft commitments,
-legal-vehicle notes, or non-public budgets.
-
----
-
-## CL-CITY-002 - Municipal Operations and Waste-Service Context
-
-**Public descriptor:** Municipal or regional service context involving waste,
-territorial operations, route pressure, behavior, and service-capacity analysis.
-
-**Context:** Waste and municipal operations are socio-physical systems: routes,
-vehicles, resident behavior, service frequency, transfer sites, informal
-practices, costs, and environmental pressure interact in ways that simple
-dashboards do not capture.
-
-**Observed challenges:**
-
-- route and service fragmentation;
-- mismatch between territorial demand and operational capacity;
-- limited behavioral and social context in technical models;
-- weak ability to compare interventions before implementation;
-- need for a reusable socio-physical digital twin pattern.
-
-**Work performed or prepared:**
-
-- waste digital twin concept logic;
-- base twin and add-on pack requirements;
-- route, service, and behavior variables;
-- indicators for pressure, coverage, cost, and service quality;
-- bridge to urban simulation and planning workflows.
-
-**Capabilities demonstrated:**
-
-- socio-technical modeling of municipal operations;
-- conversion of operational services into digital twin add-on packs;
-- ability to connect urban behavior, data, and infrastructure.
-
-**Public boundary:** Keep municipality, operational datasets, costs, and service
-contracts private unless approved.
-
----
-
-## CL-CITY-003 - Planning-Ready City Twin and Pre-BIM Workflow
-
-**Public descriptor:** City, municipality, or planning institution exploring
-urban planning, pre-BIM, GIS/BIM integration, and development-review workflows.
-
-**Context:** Planning teams often receive project material in disconnected
-formats: maps, drawings, documents, BIM files, permits, and policy constraints.
-The challenge is to create a workflow that can test projects against territorial
-context before expensive implementation stages.
-
-**Observed challenges:**
-
-- weak connection between GIS, planning rules, and BIM/IFC material;
-- limited evidence layer for project review;
-- fragmented public explanation of urban interventions;
-- need to compare scenarios and constraints before construction.
-
-**Work performed or prepared:**
-
-- planning-ready digital twin concept;
-- pre-BIM intake and validation workflow;
-- GIS/BIM/IFC integration framing;
-- rule, parcel, geometry, and public-explanation layers;
-- 2D/3D review-surface logic.
-
-**Capabilities demonstrated:**
-
-- planning-system product architecture;
-- spatial data and BIM/IFC translation;
-- design of reviewable evidence surfaces for public decisions.
-
-**Public boundary:** Do not expose candidate sites, permits, project sponsors,
-or planning documents.
-
----
-
-## CL-DEV-002 - Forest Traceability and Territorial Intelligence
-
-**Public descriptor:** Development, climate, forest, or territorial-governance
-context in Latin America.
-
-**Context:** Forest and nature-related work often needs to connect territory,
-traceability, communities, data governance, market signals, and environmental
-evidence. The technical problem is not only mapping land; it is building a
-trusted chain from source evidence to decisions and accountability.
-
-**Observed challenges:**
-
-- fragmented geospatial and administrative data;
-- weak traceability between territorial evidence and program action;
-- need to combine environmental, economic, and governance signals;
-- risk of creating reports without reusable evidence infrastructure.
-
-**Work performed or prepared:**
-
-- territorial intelligence framing;
-- traceability and evidence-chain concept;
-- geospatial and source-ledger architecture;
-- public/private data boundary design;
-- bridge to climate, biodiversity, and development finance contexts.
-
-**Capabilities demonstrated:**
-
-- climate and territorial intelligence design;
-- source-ledger thinking for environmental work;
-- ability to connect geospatial systems with institutional accountability.
-
-**Public boundary:** Keep partner names, sites, field data, and commercial
-traceability details private.
-
----
-
-## CL-DEV-003 - Nature-Based Solutions and Ecosystem Connectivity Route
-
-**Public descriptor:** Environmental cooperation, nature-based-solutions, or
-ecosystem-connectivity opportunity in Mexico.
-
-**Context:** Nature-based-solutions projects require ecological credibility,
-territorial evidence, stakeholder coordination, and implementation discipline.
-The opportunity involved evaluating whether Hadox/Polisplexity capabilities
-could support ecosystem connectivity and integrity work.
-
-**Observed challenges:**
-
-- need for ecological and territorial evidence;
-- short procurement or tender windows;
-- partner-fit uncertainty;
-- requirement to distinguish direct fit from referral or alliance route.
-
-**Work performed or prepared:**
-
-- opportunity interpretation;
-- partner-referral framing;
-- fit analysis for territorial intelligence and monitoring;
-- CRM documentation and handoff logic.
-
-**Capabilities demonstrated:**
-
-- rapid opportunity triage;
-- honest fit/no-fit assessment;
-- ability to redirect opportunities to better-positioned collaborators.
-
-**Public boundary:** Keep tender details, partner communications, and referral
-contacts private unless already public.
-
----
-
-## CL-STARTUP-001 - Energy Twin Venture Route
-
-**Public descriptor:** Startup or venture application route around energy,
-buildings, efficiency, resilience, and local digital twins.
-
-**Context:** Energy-twin work sits between building data, urban context,
-operational signals, and investment narratives. The challenge is to show how a
-city or building portfolio can move from static assessment to scenario-based
-decision support.
-
-**Observed challenges:**
-
-- limited access to granular energy data;
-- need to connect building inventory, weather, mobility, occupancy, and assets;
-- requirement to make a complex technology legible for startup evaluators;
-- need to position the product without overstating market readiness.
-
-**Work performed or prepared:**
-
-- Energy Twin concept framing;
-- startup application materials;
-- product positioning around local digital twins;
-- technical-to-commercial translation.
-
-**Capabilities demonstrated:**
-
-- venture-oriented technical storytelling;
-- energy and city-data architecture;
-- ability to translate deep infrastructure into accelerator language.
-
-**Public boundary:** Keep application details, investor materials, and financial
-claims private unless submitted as public material.
-
----
-
-## CL-STARTUP-002 - Korea Expansion and Civic AI Internationalization
-
-**Public descriptor:** International startup-expansion route focused on Korea,
-civic AI, and local digital twin market entry.
-
-**Context:** Internationalization programs evaluate not only technology, but
-local market fit, relocation or incorporation intent, ecosystem access, and
-credible local relationships.
-
-**Observed challenges:**
-
-- need to translate Polisplexity into a Korea-relevant market story;
-- requirement to identify local contacts and ecosystem bridges;
-- balancing European LDT traction with Asia market positioning;
-- proving that civic AI and digital twins can localize to Korean city and
-  industrial contexts.
-
-**Work performed or prepared:**
-
-- ecosystem-contact search;
-- English concept-note and outreach materials;
-- market-entry framing;
-- application support and CRM tracking.
-
-**Capabilities demonstrated:**
-
-- cross-border startup strategy;
-- technical localization of civic infrastructure;
-- ability to connect diaspora, innovation, and product narratives.
-
-**Public boundary:** Do not publish private contact lists, personal emails, or
-unconfirmed introductions.
-
----
-
-## CL-UNI-001 - Academic Urban SAMI and Co-Publication Route
-
-**Public descriptor:** Academic institution or research collaborator route in
-Mexico around urban scaling, SAMI, research software, and co-publication.
-
-**Context:** The portfolio includes research software that can become academic
-output if the theoretical, computational, and empirical pieces are made
-reviewable by collaborators.
-
-**Observed challenges:**
-
-- need to make code legible to academic reviewers;
-- need to connect monograph, equations, datasets, and reproducible workflows;
-- requirement to define possible publication angles and meeting agenda;
-- balance between product work and research contribution.
-
-**Work performed or prepared:**
-
-- urban-sami repository review;
-- collaborator outreach;
-- agenda framing for co-publication;
-- research/software positioning.
-
-**Capabilities demonstrated:**
-
-- research software development;
-- reproducibility and method traceability;
-- academic collaboration framing.
-
-**Public boundary:** Keep private collaborator correspondence and unpublished
-paper drafts out of Git unless explicitly approved.
-
----
-
-## CL-NGO-001 - Diaspora and Science Network Organization
-
-**Public descriptor:** Nonprofit, diaspora, or science-network organization in
-Mexico connected to technology, research, and international collaboration.
-
-**Context:** Network organizations can act as bridges between researchers,
-startups, government, diaspora experts, and public-good technology projects. The
-challenge is to turn relationship capital into structured projects without
-losing institutional memory.
-
-**Observed challenges:**
-
-- scattered contacts and initiatives;
-- weak CRM and follow-up discipline;
-- need to connect local capabilities with international opportunities;
-- difficulty preserving knowledge across email, WhatsApp, Drive, and proposals.
-
-**Work performed or prepared:**
-
-- opportunity CRM and weekly radar;
-- public opportunity publishing;
-- project folders and concept notes;
-- partner outreach support;
-- nonprofit-to-research-lab positioning.
-
-**Capabilities demonstrated:**
-
-- networked project operations;
-- opportunity intelligence;
-- nonprofit and diaspora strategy;
-- knowledge warehouse and CRM design.
-
-**Public boundary:** Do not publish internal rosters, private messages, member
-data, or relationship-sensitive notes.
-
----
-
-## CL-STARTUP-003 - Hackathon and Applied Innovation Ecosystem
-
-**Public descriptor:** Startup, university, corporate, and public-interest
-innovation programs using hackathons, challenges, and prototype sprints.
-
-**Context:** Hackathons and innovation programs are valuable when they generate
-usable evidence, talent maps, prototypes, and follow-up routes. Without method,
-they become isolated events.
-
-**Observed challenges:**
-
-- unclear challenge framing;
-- weak continuity after the event;
-- limited sponsor-to-prototype translation;
-- need to evaluate ideas, teams, and technical feasibility quickly;
-- need to package results for funders, universities, or corporate partners.
-
-**Work performed or prepared:**
-
-- challenge and hackathon methodology;
-- judging, mentoring, and technical architecture support;
-- one-pagers and SOW-style materials;
-- sponsor and partner package framing;
-- post-event pipeline logic.
-
-**Capabilities demonstrated:**
-
-- innovation-program design;
-- technical mentoring and evaluation;
-- rapid prototype framing;
-- conversion of events into project pipelines.
-
-**Public boundary:** Keep sponsor budgets, internal proposals, participant data,
-and private event operations anonymized unless public.
+# Organization Footprint and Anonymized Client Profiles
+
+This file replaces the first thin client-profile layer. The portfolio should not
+pretend that a small list of case-study IDs represents the full professional and
+academic footprint. The correct model is broader:
+
+- **named public organizations** when the relationship is public, institutional,
+  ecosystem-level, or not commercially sensitive;
+- **anonymized client profiles** when naming the organization would expose
+  private commercial work, partner-sensitive strategy, or confidential context;
+- **research/application/interview touchpoints** when the interaction was real
+  but not a client engagement;
+- **verification backlog** for organizations that should be checked against CV,
+  Drive, Gmail, calendars, repositories, or proposal archives before being
+  stated strongly.
+
+## Relationship Types
+
+| Type | Meaning |
+| --- | --- |
+| `client` | Paid or delivery-oriented client engagement. |
+| `partner` | Collaboration, consortium, ally, or implementation counterpart. |
+| `research` | Academic, research-center, publication, fellowship, or scientific collaboration route. |
+| `program` | Accelerator, fellowship, prize, grant, public call, or application route. |
+| `ecosystem` | Network, event, community, conference, diaspora, or innovation ecosystem. |
+| `infrastructure` | Platform, tool, cloud, open-source, HPC, or deployment infrastructure. |
+| `interview/touchpoint` | Conversation, application, meeting, intro, or exploratory contact. |
+| `private-anonymized` | Real work exists, but the organization should not be named publicly here. |
+
+## Public Named Organizations and Ecosystems
+
+These organizations can be named as public footprint or public-context
+touchpoints. The relationship type should still be precise; not every
+organization listed here is a client.
+
+| Organization / ecosystem | Relationship type | Portfolio relevance |
+| --- | --- | --- |
+| Hadox Research Labs | infrastructure / product | Scientific intelligence, research systems, evidence-to-decision infrastructure. |
+| Polisplexity LTD | product / startup | Open local digital twins, civic AI, urban simulation, city intelligence. |
+| Nodo Guanajuato A.C. | nonprofit / partner | Legal and civic collaboration vehicle for Hadox-related public-interest work. |
+| Red Global MX | ecosystem | Diaspora, scientific collaboration, innovation network, international bridges. |
+| UNAM | research / academic | Physics, scientific network, public university collaboration routes. |
+| Facultad de Ciencias UNAM | research / academic | Scientific and academic collaboration context. |
+| Radboud University | research / academic | Physics/astronomy academic trajectory. |
+| CIMAT | research / infrastructure | HPC, advanced computing, regional innovation and supercomputing route. |
+| SECTEI CDMX | public-sector / program | Public science, technology, innovation, PILARES/territorial intelligence routes. |
+| PILARES | public-sector / program | Public policy and evaluation route connected to SECTEI work. |
+| SMARTIO | partner / public-sector tech | Web3/public technology roadmap route with SECTEI/Hadox context. |
+| COCYTIEG | public-sector / ecosystem | Guanajuato science and innovation talk/project context. |
+| IDEA GTO / innovation agency route | public-sector / ecosystem | Talent, innovation, Guanajuato technology ecosystem context. |
+| SRE Mexico | public-sector / ecosystem | Emerging technologies and international collaboration route. |
+| IPN | academic / public institution | AI, biotech, vaccines, courses, and public academic ecosystem routes. |
+| Tec de Monterrey | academic / partner | Urban, city, entrepreneurship, and research-collaboration routes. |
+| Centro para el Futuro de las Ciudades / Tec route | academic / urban research | City systems, planning, urban intelligence, partner route. |
+| ISD | partner / consulting | Fintech, social/business innovation, project collaboration route. |
+| TAFF / Taff route | partner / consulting | Chile, fintech, strategy, and proposal-collaboration route. |
+| Grupo Gigante | private-sector / partner route | ISD-linked corporate/innovation project context; verify exact public framing before publishing details. |
+| FinTech Mexico / FTMX | industry association / client route | Financial-sector research, AI-assisted market intelligence, Libro 2030/Insights 2027 proposal. |
+| Deloitte Mexico | private-sector ecosystem | Partner-introduction and consulting ecosystem route; do not imply client unless verified. |
+| BID / IDB | development / program | Public-sector, innovation, regional development and opportunity pipeline. |
+| CAF | development / program | Regional development and opportunity pipeline. |
+| GIZ Mexico | development / procurement | Nature-based solutions, climate, MOOC, cooperation and tender routes. |
+| ALADI Uruguay | international organization / program | Trade/integration opportunity route. |
+| NAFIN | development finance / program | Mexican development finance and opportunity pipeline. |
+| INE | public-sector / opportunity | Public procurement/opportunity route; verify specific role before claim. |
+| Aguascalientes SIGOD route | public-sector / project | Government simplification, digital government, regulatory improvement, data evidence. |
+| SEDECYT Aguascalientes route | public-sector / project | Economic development, science/technology, innovation boundary analysis. |
+| INCyTEA route | public-sector / project | Science, technology, innovation and entrepreneurship policy boundary. |
+| Instituto de Educacion de Aguascalientes route | public-sector / project | Education/digital agenda boundary in government simplification analysis. |
+| Rotarios / Benjamin Aguascalientes route | civic / partner | Local public-sector pilot handoff and civic bridge. |
+| Cornell / Runway Postdoc | research / program | Postdoc/startup research route. |
+| Santa Fe Institute | research / program | Complexity, collective intelligence, GAINS and research-line routes. |
+| Berkeley tech policy route | research / program | Fellowship / tech policy route; verify exact public name before strong claim. |
+| MIT REAP | ecosystem / program | Innovation ecosystem and entrepreneurship route. |
+| MIT Bootcamp | program | Entrepreneurship and innovation training/application route. |
+| Cambridge Tech Week | ecosystem | International tech ecosystem route. |
+| Hong Kong Baptist University | research / program | Writers workshop / academic program route. |
+| Harvard Radcliffe | research / program | Fellowship/application route; not a client. |
+| Ronin Institute | research / affiliation | Independent research affiliation route. |
+| AIST | research center / interview route | Japan research-host route; verify exact interaction and researcher before public detail. |
+| Mirai Innovation Research Institute | research / host route | Japan host-letter route; verify eligibility and public wording. |
+| MIF / Matsumae International Foundation route | research / program | Japan research fellowship/application route. |
+| AIST / Japanese research ecosystem route | research / interview/touchpoint | Robotics, AI, industrial research and host search context. |
+| CES / Consumer Technology Association | ecosystem / program | Eureka Park, Innovation Awards judge application, speaker notification, product/exhibit routes. |
+| CTA | ecosystem / program | CES operator and innovation awards context. |
+| Nvidia | infrastructure / program | GPU/AI ecosystem and startup/infrastructure route. |
+| Google | program / platform | Startup/application, cloud/AI ecosystem, product positioning route. |
+| Microsoft / Office ecosystem | platform / enterprise | AI integration and Microsoft environment evaluation in enterprise workflow discussions. |
+| IBM / Watson route | program | Watson fellowship/application route. |
+| 500 Global / 500 LatAm | startup / accelerator | Startup application route; program availability issue documented. |
+| Watson Institute | program | Flagship fellowship application route. |
+| MIT Solve | program | Opportunity evaluated and marked no-go. |
+| Internet Society | program | Application route through Fluxx and independent/nonprofit framing. |
+| K-Startup Grand Challenge | startup / program | Korea expansion, civic AI, local digital twin internationalization. |
+| Korea Institute of Startup & Entrepreneurship Development / KISED | program | K-Startup institutional context. |
+| GCCEI / Gyeonggi Center for Creative Economy and Innovation | program | K-Startup institutional context. |
+| Red Global MX Korea / Mexican network in Korea | ecosystem | Local access and diaspora bridge for Korea expansion. |
+| Tallinn city route | city / partner | LDT, freight, Old Town logistics, planning/digital construction context. |
+| Kharkiv city route | city / partner | Reconstruction, resilience, housing, services, restricted-data route. |
+| Gaziantep route | city / partner | GIS/BIM, resilience, disaster/heat/mobility route. |
+| BABLE | partner / smart-city ecosystem | European smart-city and LDT proposal support context. |
+| OASC | ecosystem | Smart-city and Local Digital Twin community route. |
+| Virtual City Systems | partner/touchpoint | Urban digital twin and city systems integration route. |
+| Nabladot | partner/touchpoint | Urban simulation, wind, solar radiation and heat-stress route. |
+| SAAT Teknoloji | partner/touchpoint | AI video analytics route. |
+| SenLab / NGSI-LD route | partner/touchpoint | Context broker and interoperability route. |
+| PI-Tech / Zhytomyr route | partner/touchpoint | Ukraine and city-integration route. |
+| HaiTech Innovation AB | partner | Swedish technical/integration legal route; public only if approved in context. |
+| Activae / Vanishing Point BV | partner | Exploitation, sustainability, Netherlands route; public wording should be reviewed. |
+| SAULE | partner | AI/automation, Latvia/community/training route; public wording should be reviewed. |
+| Helgen Technologies | partner | Infrastructure/security/systems integration route; verify public use before naming. |
+| Skymantics | partner/touchpoint | Synthetic population and simulation module route; verify public use before naming. |
+| LabLab.ai | ecosystem / program | Hackathon leadership, AI challenge and mentoring ecosystem. |
+| Techstars Startup Weekend AI4ALL CDMX | ecosystem / program | Hackathon/innovation-program leadership and mentoring context. |
+| MassChallenge | ecosystem / mentoring | Startup and mentoring context; verify exact role before strong claim. |
+| PROCINE | public-sector / creative industries | Public creative/film ecosystem route. |
+| MARCO | cultural / talk route | Public talk / AI context; verify exact institution before strong claim. |
+| INAOE | research center / directory route | Research-center outreach context; verify if direct interaction occurred. |
+| CIBNOR | research center / directory route | Research-center outreach context; verify if direct interaction occurred. |
+| IPICYT | research center / directory route | Research-center outreach context; verify if direct interaction occurred. |
+| CIDETEQ | research center / directory route | Research-center outreach context; verify if direct interaction occurred. |
+| ANUIES / CUPIA | academic network / directory route | Higher-education contact discovery route. |
+| RDA / RIIS / NCIS routes | research affiliation/program | Research affiliation and event/application routes; verify exact public names. |
+| Royal Academy of Engineering LIF | program | Leaders in Innovation Fellowship route. |
+| German Business Cooperation Programme | program | International business/innovation route. |
+| UK Department for Business and Trade | ecosystem / program | UK innovation/business route. |
+| BE / Business Ecosystem route | private-sector project | AI discovery platform, Microsoft environment, workflow integration. |
+| TeachLeap / Techleap.nl | ecosystem / startup route | Netherlands startup ecosystem thread; verify relationship status. |
+| Access Tokyo | program / ecosystem | Tokyo market-entry and startup access route; verify details before public claim. |
+| F6S | platform / startup programs | Startup application platform route. |
+| UpLink / World Economic Forum | program | Opportunity radar route. |
+| Cartier Women's Initiative | program | Opportunity radar; fit depends on eligibility. |
+| FAO Global AgriInno Challenge | program | Opportunity radar; agriculture/innovation route. |
+| HARD2SCALE | accelerator / program | Material-flow intelligence and Chile angle route. |
+| EIT Urban Mobility / AI MOVE | program | Urban mobility AI opportunity route. |
+| Freight Innovation Fund / Connected Places Catapult | program | UK freight/logistics accelerator route. |
+| Department for Transport UK | public-sector / program | Freight Innovation Fund funder context. |
+| British Council / BIC UK route | program | UK-related opportunity route; verify exact acronym and call. |
+| SE Canada | program / market route | Startup/video/product route. |
+| Quantum technologies strategy route | research / policy | National strategy, conference paper, quantum technologies public work. |
+| Red Global MX Guatemala / AI Summit route | ecosystem | AI summit, Costa Rica/LatAm contact propagation route. |
+| Distrito Innovacion Puebla | public/private ecosystem | Innovation district route; verify exact organization before strong claim. |
+| Coahuila AI route | public-sector / ecosystem | AI opportunity or public-sector route; verify before strong claim. |
+| Hermosillo proposals route | city / opportunity | City proposal route; verify before public detail. |
+| Hidalgo Digital | public-sector / digital government | Historical digital transformation route. |
+| Romita STEAM | municipal / education | STEM/STEAM local education route. |
+| UTVAM | academic / talk | Public talk route. |
+| IIMAS | academic / research | Research/talk route; verify exact engagement. |
+| SMIA / MICAI | academic / conference | AI academic conference ecosystem. |
+| Risknovation | ecosystem / event | Risk/innovation public event route. |
+| Skandia | private-sector | Historical client/touchpoint; verify confidentiality before naming publicly. |
+| BitZero | startup / infrastructure | Historical project route. |
+| CDIT | innovation / urban lab | Urban lab, technology and innovation center route. |
+| CEPES | public/policy route | Public policy/certificate route; verify exact meaning before strong claim. |
+| CEMEIXCAN | ecosystem / organization | Historical organization route; verify spelling and role. |
+| Mira Global | ecosystem / organization | Historical route; verify relationship status. |
+| Aracnia | platform / product | OEPPEH/BI stack and public platform route. |
+| OEPPEH | public/health ecosystem | BI stack and institutional intelligence route. |
+
+## Anonymized Client Profiles
+
+These describe private or partner-sensitive work without naming the organization.
+
+### CL-ENT-001 - Global and Regional Enterprise Systems
+
+**Public descriptor:** Large enterprise organizations in retail, consumer goods,
+logistics, services, oil/gas, finance, and complex operations.
+
+**Observed challenges:** ERP fragmentation, SAP custom logic, data migration,
+tax/electronic invoicing, reporting, integration, compliance, production
+support, and business continuity under change.
+
+**Work footprint:** ABAP/ABAP Objects, FI/SD/MM/CO/SRM/CRM/HANA, IDoc, BAPI,
+BADI, user exits, forms, workflow, SQL/HANA reporting, migration, interfaces,
+and compliance logic.
+
+**Portfolio meaning:** This is the enterprise backbone behind later public-sector
+and city-infrastructure work: production discipline, auditability, data
+contracts, integration, and change control.
+
+**Public boundary:** Do not name the companies unless explicitly verified as
+public and safe.
+
+### CL-GOV-001 - Public Education, Culture, Archive, or Service Data Institution
+
+**Public descriptor:** Public-sector institution with education/culture/library
+or service records that needed graph, big-data, or evidence modeling.
+
+**Observed challenges:** Messy institutional records, weak entity normalization,
+service coverage questions, public archive intelligence, and policy-relevant
+analysis from operational data.
+
+**Work footprint:** Graph modeling, source normalization, relationship mapping,
+public-service pattern analysis, and decision-ready evidence structures.
+
+**Public boundary:** Keep the exact institution and raw records private unless
+cleared.
+
+### CL-GOV-002 - Public Innovation and Policy Laboratory
+
+**Public descriptor:** Government innovation or public-policy unit.
+
+**Observed challenges:** unclear mandate, portfolio drift, limited impact
+evidence, weak operating routines, and tension between communication, policy,
+and delivery.
+
+**Work footprint:** governance diagnosis, operating model, portfolio framing,
+impact logic, stakeholder mapping, and public-value strategy.
+
+**Public boundary:** Keep political context, internal diagnostics, and individual
+names private.
+
+### CL-DEV-001 - Digital Entrepreneurship and Inclusion Organizations
+
+**Correction:** This ID should not be described as only a "program." It refers to
+a development and inclusion route involving organizations around women digital
+entrepreneurship, startup support, diaspora/international networks, and
+platform-building. The specific organizations must be validated from the 2025
+project folders and correspondence before being named as clients.
+
+**Likely public organization routes to verify:** Vancouver Plataforma Hub
+Emprendedoras, Red Global MX, partner universities/NGOs, and development or
+startup-support organizations involved in women digital entrepreneurship.
+
+**Observed challenges:** converting entrepreneurship stories, community support,
+and program activity into reusable evidence, platform logic, partner materials,
+and fundable implementation routes.
+
+**Work footprint:** evidence design, platform framing, digital inclusion logic,
+outreach materials, opportunity positioning, and public/private data boundaries.
+
+**Public boundary:** Do not name participant organizations as clients until the
+relationship is verified. Keep participant identities and private program
+material out of Git.
+
+### CL-CITY-002 - Municipal Operations and Waste-Service Context
+
+**Public descriptor:** Municipal/regional service context involving waste,
+routes, territorial service pressure, behavior, and operational capacity.
+
+**Observed challenges:** fragmented service routes, mismatch between demand and
+capacity, weak behavioral context, and limited ability to compare interventions.
+
+**Work footprint:** socio-physical digital twin concept, waste add-on pack,
+route/service variables, indicators, and intervention comparison logic.
+
+**Public boundary:** Keep municipality, operational datasets, contracts and costs
+private unless cleared.
+
+### CL-CITY-003 - Planning-Ready City Twin and Pre-BIM Workflow
+
+**Public descriptor:** City/planning institution exploring GIS/BIM, pre-BIM,
+project review, and territorial evidence.
+
+**Observed challenges:** disconnected planning documents, GIS layers, BIM/IFC
+files, permits, and public explanation needs.
+
+**Work footprint:** planning-ready digital twin concept, pre-BIM intake,
+GIS/BIM/IFC framing, rule/parcel/geometry layers, 2D/3D review-surface logic.
+
+**Public boundary:** Keep candidate sites, permits, sponsors, and planning files
+private.
+
+## Verification Backlog
+
+The following should be checked before the public portfolio claims them strongly:
+
+- exact public/non-public enterprise client names from SAP and consulting work;
+- full list of organizations behind the women digital entrepreneurship route;
+- research-center interview list from Japan, Ronin, Radcliffe/Harvard, RDA/RIIS,
+  NCIS, and related fellowship threads;
+- exact role and status for AIST, Mirai, MIF, AIST-linked researchers, and
+  other Japan host contacts;
+- exact current status of CES/Eureka Park/Judge/Speaker routes;
+- exact status of LDT4SSC partners that can be named publicly;
+- all 2020-2026 project folders in the historical PMO inventory, especially the
+  331 historical entries in Drive.
+
+## Editorial Rule
+
+This file is not the final universe of organizations. It is the first corrected
+structure. Any future publication should distinguish:
+
+1. **client** from **partner**;
+2. **paid work** from **application/interview/touchpoint**;
+3. **public organization name** from **private client identity**;
+4. **verified relationship** from **needs verification**.
