@@ -2,6 +2,8 @@
 
 This index is public-facing and anonymized. Some rows refer to public work;
 others use client or partner IDs according to the [Client ID Protocol](client-id-protocol.md).
+The narrative profiles for these IDs are maintained in
+[Anonymized Client and Counterpart Profiles](client-profiles.md).
 
 | ID | Area | Public title | Status | Public detail level |
 | --- | --- | --- | --- | --- |
