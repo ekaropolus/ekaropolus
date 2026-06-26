@@ -24,7 +24,7 @@ Use short IDs that preserve the type of work without revealing the organization.
 The private mapping should be kept in:
 
 ```text
-private/client-map.csv
+the ignored private mapping file
 ```
 
 Suggested columns:

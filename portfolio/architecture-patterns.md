@@ -116,7 +116,7 @@ Design rules:
 
 ## AI-Assisted Research Operations
 
-Used in Hadox, Codex Worklog, proposal work, and sector research.
+Used in Hadox, proposal work, sector research, and internal operating memory.
 
 ```text
 session / source / document
@@ -127,6 +127,7 @@ session / source / document
   -> reusable portfolio / CRM / report output
 ```
 
-This is the bridge between daily Codex work and the GitHub portfolio. The
-worklog can identify candidate case studies, but publication should pass through
-a human editorial review and the client-ID protocol.
+This is the bridge between internal research operations and the GitHub
+portfolio. Operating records can identify candidate case studies, but
+publication should pass through a human editorial review and the client-ID
+protocol.

@@ -39,7 +39,7 @@ Representative work:
 - Mexico / Netherlands / Belgium scientific intelligence surfaces.
 - EVA Breast Cancer Archive Platform.
 - ACE Electoral Intelligence migration and knowledge-system plan.
-- Codex Worklog as an internal research-operations platform.
+- Internal research-operations platform and operating memory.
 
 ## Urban Scaling, SAMI, and Multiscale City Methods
 

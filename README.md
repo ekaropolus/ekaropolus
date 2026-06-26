@@ -25,7 +25,7 @@ Some of the work behind this profile is moving into organization-owned repositor
 
 - [Polisplexity](https://github.com/polisplexity) for city intelligence and local digital twin products.
 - [Hadox Research Labs](https://github.com/Hadox-Research-Labs) for research platforms, institutional intelligence, and Hadox-operated infrastructure.
-- [git.hadox.org](https://git.hadox.org) for internal deployment, Drone CI, and operational repositories.
+- internal operational repositories and deployment infrastructure for private workstreams.
 
 The personal account remains useful for older research, public experiments, prototypes, and work that is tied to me directly as a physicist-developer rather than to a specific institution.
 

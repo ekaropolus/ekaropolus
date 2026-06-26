@@ -64,8 +64,8 @@ Input types:
 - public registries;
 - application forms;
 - opportunity pages;
-- inbox threads;
-- meeting transcripts;
+- validated relationship records;
+- meeting evidence;
 - repository documentation;
 - expert notes.
 
@@ -103,7 +103,7 @@ evidence workspace that can generate better reports."
 - EVA Breast Cancer Archive Platform.
 - ACE Electoral Intelligence plan.
 - Country and sector opportunity intelligence.
-- Codex Worklog as internal research-operations instrumentation.
+- Internal research-operations instrumentation.
 
 ## Public status
 

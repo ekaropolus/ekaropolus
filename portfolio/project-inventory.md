@@ -3,27 +3,16 @@
 This file is the working project layer behind the CV. It is broader than a
 portfolio page: it includes shipped platforms, proposals, concept notes,
 research lines, opportunity applications, prototypes, public-sector projects,
-enterprise work, and Codex-built internal systems.
+enterprise work, and operating systems.
 
-The raw source audit is kept in a private, Git-ignored file because the original
-folders include unverified names, private paths, and client-sensitive material.
-
-## Source Surfaces
-
-| Source | Use in this inventory |
-| --- | --- |
-| Google Drive `Proyectos 2026` | Active numbered project folders and proposal packs. |
-| Codex local workspace | Recent builds, concept notes, prototypes, submissions, PDFs, and chat-born projects. |
-| PMO historical YAML | Cross-year historical registry with 331 observed project entries. |
-| GitHub repositories | Public software, research artifacts, and portfolio pages. |
-| Gmail / calendar / transcripts | Relationship and status evidence; not published directly. |
+This public version describes work at a portfolio level. Operational details and
+supporting evidence are intentionally kept out of GitHub.
 
 ## Inventory Rule
 
 Every item should eventually have:
 
 - public-safe title;
-- private source folder or evidence pointer;
 - role;
 - status;
 - client/partner visibility rule;
@@ -31,12 +20,12 @@ Every item should eventually have:
 - whether it should become a case study, capability note, product page, or
   proposal artifact.
 
-## Current Numbered Project Folders
+## Current Project Slate
 
-These are the active 2026 Drive folders that should be treated as the backbone
-for current project tracking.
+These are the active project and proposal lines that should be treated as the
+backbone for current CV development.
 
-| No. | Project / folder | Public CV angle | Status for CV |
+| No. | Project line | Public CV angle | Status for CV |
 | --- | --- | --- | --- |
 | 01 | CES Las Vegas | Startup exhibition, innovation awards, speaker/judge positioning, international tech ecosystem. | Active route / evidence-backed. |
 | 02 | Logical Digital Twins | Early digital twin strategy and conceptual architecture. | Needs merge into LDT program. |
@@ -60,13 +49,13 @@ for current project tracking.
 | 20 | BE Selection | AI/vendor or platform-selection support. | Strong anonymized case candidate. |
 | 21 | Hadox App Platform | Scientific intelligence and internal platform architecture. | Product/system page. |
 | 22 | Hadox Public Web | Public web and content infrastructure. | Product/system page. |
-| 23 | Hadox Odoo PMO CRM | PMO/CRM operational tooling. | Internal systems capability. |
+| 23 | Hadox operations CRM | Program and relationship-management tooling. | Internal systems capability. |
 | 24 | Polisplexity Core Platform | Civic digital twin platform architecture. | Core product/system page. |
 | 25 | Eva Research Archive | Digital humanities / medical history corpus platform. | Public product and research case. |
-| 26 | Sign Hadox Platform | Document signing and administrative workflow platform. | Internal platform / operations case. |
-| 27 | N8N Automation Hub | Automation and integration workflows. | Internal platform / automation capability. |
-| 28 | Git Hadox Control Plane | Self-hosted Git and technical control plane. | Infrastructure capability. |
-| 29 | Drone CI Control Plane | CI/CD, deployment, and automation infrastructure. | Infrastructure capability. |
+| 26 | Document-signing workflow platform | Signing and administrative workflow infrastructure. | Internal platform / operations case. |
+| 27 | Automation hub | Automation and integration workflows. | Internal platform / automation capability. |
+| 28 | Version-control infrastructure | Self-hosted version-control and technical control-plane work. | Infrastructure capability. |
+| 29 | CI/CD infrastructure | Deployment, testing, and automation infrastructure. | Infrastructure capability. |
 | 30 | Twin Base Studio | Open local digital twin studio, city data, GIS/BIM, operational surfaces. | Core product case. |
 | 31 | Atlas Studio | Spatial/atlas visualization or data product line. | Needs source review. |
 | 32 | OEPPEH BI Stack | Institutional BI, data platform, filtered profiles, public portal. | Product/case candidate. |
@@ -84,48 +73,45 @@ for current project tracking.
 | 44 | SRE Tecnologias Emergentes - Nodo Polisplexity | Emerging technologies, foreign affairs, diaspora, public-interest tech. | Ecosystem/proposal route. |
 | 45 | Piloto simplificacion gubernamental AGS | Government simplification, regulatory improvement, public-service intelligence. | Strong public-sector case candidate. |
 | 46 | IINCOT | Research/conference/proposal route. | Needs verification. |
-| 90 | PMO Plataformas y Sistemas | Historical project registry and internal operations backbone. | Private evidence source. |
+| 90 | Platform and systems operations | Historical project registry and internal operations backbone. | Internal evidence source. |
 
-## Codex-Born Recent Project Surfaces
+## Recent Prototypes and Operating Systems
 
-These are recent local workspaces that look like projects, prototypes, proposal
+These are recent workstreams that look like projects, prototypes, proposal
 packs, or reusable assets. They should be reviewed before the final CV pass.
 
-| Workspace / folder | Project interpretation | CV use |
+| Workstream | Project interpretation | CV use |
 | --- | --- | --- |
-| `codex-worklog` | Local worklog dashboard and editorial index for Codex operations. | AI operations / personal knowledge infrastructure. |
-| `rgmx-science-diaspora` | Researcher discovery app and diaspora intelligence workflow. | Scientific network intelligence / data product. |
-| `sat-finance-control` | Patrimonial-control finance app. | Internal finance/data governance tooling. |
-| `image-to-3d-lab` | General 3D reconstruction, splatting, photogrammetry, and asset pipeline lab. | 3D/XR technical capability. |
-| `genesis-twin` and `genesis-twin-3d` | Pregnancy/prenatal twin concept and web experience. | Consumer digital twin / health-adjacent prototype. |
-| `urban-sami` | Research workflow engine for urban scaling and SAMI structures. | Research software / academic publication route. |
-| `tallinn-old-town-freight-evidence` | Tallinn freight and Old Town evidence concept package. | City logistics / digital twin proposal case. |
-| `giz-7000012298` | GIZ nature-based solutions tender analysis. | Development procurement / environmental intelligence. |
-| `idb-lab-civic-ai` | IDB civic AI opportunity package. | Development finance / civic AI proposal. |
-| `caf-forest-costa-rica` | Forest / territorial intelligence concept. | Climate and nature intelligence. |
-| `caf-guayaquil-galapagos` | Coastal/island or city-region concept route. | Climate/territorial proposal route. |
-| `caf-quito-water-tariff` | Water tariff/public policy analytics route. | Public policy and utility intelligence. |
-| `esa-bic-uk` | Space/business incubation UK route. | Startup/internationalization route. |
-| `google-ai-energy` | Google/AI energy application route. | Startup/product application route. |
-| `nlnet-submission` | Open-source funding route. | Open-source infrastructure funding. |
-| `sectei_uploads` and `sectei_pdf_preview` | SECTEI submission support artifacts. | Public proposal operations. |
-| `polisplexity-vat-week-1` | UK VAT evidence and operational activation route. | Business operations / compliance evidence. |
-| `codelaunch-assets` | CodeLaunch or startup competition assets. | Startup pitch and product narrative. |
-| `mundial-lab` | Sports/world-cup or live-data lab route. | Needs source review. |
-| `vivienda-construccion-radar` | Housing/construction opportunity radar. | Urban/housing intelligence. |
-| `noclip-atlas-mvp` | Map/atlas MVP. | Spatial product capability. |
-| `babylon-civic-xr-demo` | WebXR/civic XR demo. | XR/3D civic visualization. |
-| `unreal-cesium-civic-xr-demo` | Unreal/Cesium civic XR demo. | 3D geospatial / simulation capability. |
-| `micromundo-three-mvp` | Three.js MVP. | Interactive 3D/web capability. |
-| `mario-micromundo-lab` | Microworld simulation/prototype lab. | Simulation / educational systems. |
-| `kharkiv-coming-soon-prod` | Kharkiv-facing public product surface. | LDT communications/productization. |
-| `polisplexity-coming-soon` | Polisplexity public launch surface. | Startup productization. |
-| `lab-polisplexity-tech-*` | Polisplexity lab web surfaces. | Product demo and lab communication. |
-| `hadox-talks-*` and `polisplexity-talks-*` | Public talks/pages. | Thought leadership / speaking evidence. |
-| `redglobalmx_innovafest_talent_wall` | Red Global MX event/talent installation. | Event technology / diaspora network. |
-| `guatemala_ai_week_2026` and `guatemala-ai-week-2026-reveal` | AI summit/event material. | Regional AI ecosystem and convening. |
-| `jalisco-hadox-package-local` | Jalisco public/institutional package. | Regional public-sector proposal route. |
-| `ags-drive-paquetes-benjamin` and `ags-simplificacion-gubernamental` | Aguascalientes pilot package and handoff. | Government simplification case. |
+| AI worklog and editorial operations | Worklog dashboard, editorial index, and structured operating memory for project work. | AI operations / personal knowledge infrastructure. |
+| Research diaspora intelligence | Researcher discovery and diaspora intelligence workflow. | Scientific network intelligence / data product. |
+| Patrimonial-control finance app | Internal finance and data-governance tooling. | Internal finance/data governance tooling. |
+| Image-to-3D lab | General 3D reconstruction, splatting, photogrammetry, and asset pipeline lab. | 3D/XR technical capability. |
+| Prenatal / personal digital twin prototype | Pregnancy/prenatal twin concept and web experience. | Consumer digital twin / health-adjacent prototype. |
+| Urban SAMI research engine | Research workflow engine for urban scaling and SAMI structures. | Research software / academic publication route. |
+| Tallinn freight evidence package | Tallinn freight and Old Town evidence concept package. | City logistics / digital twin proposal case. |
+| Nature-based solutions tender analysis | Development procurement and environmental intelligence. | Development procurement / environmental intelligence. |
+| Civic AI development-finance package | Development finance and civic AI proposal route. | Development finance / civic AI proposal. |
+| Forest and territorial intelligence concept | Forest, climate, and territorial intelligence route. | Climate and nature intelligence. |
+| Coastal and island-region intelligence concept | Coastal/island or city-region concept route. | Climate/territorial proposal route. |
+| Water tariff and utility analytics | Water tariff and public policy analytics route. | Public policy and utility intelligence. |
+| Space/business incubation route | Space/business incubation and UK market route. | Startup/internationalization route. |
+| AI energy application route | AI energy product/application route. | Startup/product application route. |
+| Open-source funding route | Open-source infrastructure funding route. | Open-source infrastructure funding. |
+| SECTEI submission operations | Public proposal operations and submission package. | Public proposal operations. |
+| UK business activation evidence | UK operational activation and compliance evidence. | Business operations / compliance evidence. |
+| Startup competition assets | Startup pitch and product narrative material. | Startup pitch and product narrative. |
+| Sports/live-data lab | Live-data product or simulation route. | Needs source review. |
+| Housing and construction radar | Housing/construction opportunity radar. | Urban/housing intelligence. |
+| Spatial atlas MVP | Map and atlas MVP. | Spatial product capability. |
+| Civic XR demo | WebXR civic visualization demo. | XR/3D civic visualization. |
+| Geospatial simulation demo | Unreal/Cesium civic XR and simulation demo. | 3D geospatial / simulation capability. |
+| Interactive 3D microworld | Three.js and microworld simulation prototype. | Interactive 3D/web capability. |
+| City-facing product surfaces | Public product and communications surfaces for city digital twin work. | LDT communications/productization. |
+| Public lab and talk pages | Public talk, lab, and product communication surfaces. | Thought leadership / speaking evidence. |
+| Diaspora event technology | Event and talent-network installation. | Event technology / diaspora network. |
+| Regional AI summit materials | AI summit and regional convening material. | Regional AI ecosystem and convening. |
+| Regional institutional package | Regional public/institutional package. | Regional public-sector proposal route. |
+| Government simplification package | Government simplification pilot package and handoff. | Government simplification case. |
 
 ## Programs and Project Families
 
@@ -182,7 +168,7 @@ Core items:
 - IDB civic AI;
 - CAF routes;
 - NAFIN / INE / development finance scouting;
-- Hidalgo Digital and older government routes from the historical PMO.
+- Hidalgo Digital and older government routes from the historical record.
 
 CV narrative:
 
@@ -256,15 +242,15 @@ CV narrative:
 
 Core items:
 
-- Hadox Odoo PMO CRM;
-- Codex Worklog;
-- Sign Hadox Platform;
-- N8N Automation Hub;
-- Git Hadox Control Plane;
-- Drone CI Control Plane;
+- Hadox operations CRM;
+- AI worklog and editorial operations;
+- document-signing workflow platform;
+- automation hub;
+- version-control infrastructure;
+- CI/CD infrastructure;
 - finance/patrimonial-control app;
 - local opportunity CRM / CSV pack;
-- Gmail/Drive/calendar-driven proposal operations.
+- evidence-backed proposal operations.
 
 CV narrative:
 
@@ -272,11 +258,11 @@ CV narrative:
 > self-hosted Git, CI/CD, automation, signing, CRM, worklog, finance control,
 > knowledge management, and AI-assisted editorial operations.
 
-## Historical PMO Signal
+## Historical Project Signal
 
-The historical PMO source contains 331 observed entries across 2019-2026. It
-should not be copied directly into the public CV, but it proves that the project
-map must include much more than current proposals. Notable historical clusters:
+The historical project record should not be copied directly into the public CV,
+but it proves that the project map must include much more than current
+proposals. Notable historical clusters:
 
 - blockchain and financial digital transformation;
 - complexity science and data science;
@@ -296,20 +282,20 @@ map must include much more than current proposals. Notable historical clusters:
 
 1. Extract the long commercial CV and map SAP/Deloitte-era projects into
    anonymized enterprise profiles.
-2. Use the PMO historical YAML to create year-by-year public-safe project rows.
-3. Review Gmail/calendar/transcripts for active city and research-counterparty
-   evidence.
+2. Create year-by-year public-safe project rows from the verified historical
+   record.
+3. Review validated relationship evidence for active city and
+   research-counterparty work.
 4. Promote strong items into separate case studies:
    - FTMX AI-assisted research;
    - Aguascalientes simplification;
    - BE Discovery / Selection;
    - SECTEI CDMX;
    - Tallinn Old Town Freight;
-   - Codex Worklog / AI operating system;
+   - AI worklog and operating system;
    - CIMAT/HPC and local digital twin processing;
    - Red Global MX diaspora intelligence.
-5. Add a private `project_id -> source folder -> client/partner` map outside
-   Git.
+5. Maintain the private project-to-evidence map outside Git.
 
 ## Public CV Use
 

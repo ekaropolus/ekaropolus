@@ -7,9 +7,9 @@ Current core capability.
 ## What it solves
 
 Research, public-sector, and innovation work often depends on scattered evidence:
-papers, PDFs, datasets, forms, spreadsheets, emails, websites, meeting
-transcripts, repositories, and expert memory. This capability turns that
-fragmented material into structured intelligence that can support decisions.
+papers, PDFs, datasets, forms, spreadsheets, websites, validated relationship
+records, repositories, and expert memory. This capability turns that fragmented
+material into structured intelligence that can support decisions.
 
 ## Technical thesis
 
@@ -48,7 +48,7 @@ sources
 - Research-community and fellowship applications.
 - Proposal preparation.
 - Public-sector concept notes.
-- Codex Worklog editorial extraction.
+- Editorial operating-memory extraction.
 - Portfolio candidate discovery.
 
 ## Outputs

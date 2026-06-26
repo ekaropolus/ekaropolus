@@ -19,7 +19,7 @@ turning the system into an untraceable black box.
 - Prompt and context design.
 - Review queues.
 - Public/private sensitivity handling.
-- Evidence extraction from documents, emails, transcripts, and repositories.
+- Evidence extraction from documents, validated records, and repositories.
 - Structured output generation for reports, concept notes, and case studies.
 
 ## Design rules
@@ -34,7 +34,7 @@ turning the system into an untraceable black box.
 ## Current applications
 
 - Hadox Scientific Intelligence.
-- Codex Worklog editorial layer.
+- Editorial operating-memory layer.
 - Proposal and concept-note generation.
 - Public opportunity radar.
 - Technical portfolio candidate extraction.

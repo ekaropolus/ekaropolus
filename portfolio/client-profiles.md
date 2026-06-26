@@ -12,7 +12,7 @@ unfinished conversations, and confidential proposal work.
 | Named public organization | A public institution, university, program, ecosystem, or partner that can be named without exposing a confidential client. | Name it only when the relationship or route is documented. |
 | Anonymized client profile | A private, sensitive, or not-yet-cleared organization. | Use a client ID and sector description, not the legal name. |
 | City and public authority pipeline | Cities, municipalities, agencies, or public-sector routes connected to digital twins, data, policy, or innovation work. | Separate direct proposal work from researched or early conversations. |
-| Verification backlog | Important entities that probably belong here but still need source checking. | Do not publish as fact until checked against CV, Drive, email, calendar, or contracts. |
+| Verification backlog | Important entities that probably belong here but still need source checking. | Do not publish as fact until checked against public-safe evidence and approved records. |
 
 ## Core Organizations
 
@@ -164,15 +164,14 @@ generic accelerator scouting rows.
 
 The next pass should add evidence-backed detail from:
 
-1. the full SAP/Deloitte CV and any public employment record;
-2. the long commercial CV in the Drive commercial folder;
-3. historical project inventory from PMO records;
-4. Gmail threads with actual counterparties;
-5. calendar meetings and transcripts;
-6. Drive proposal folders for LDT4SSC, SECTEI, FTMX, Aguascalientes, Korea,
-   Japan, CES, GIZ, IDB/CAF, and other opportunity tracks;
-7. GitHub repositories for Polisplexity, Hadox, Twin Base Studio, research
-   papers, internal platforms, and technical prototypes.
+1. public CV and employment evidence;
+2. verified commercial and enterprise project records;
+3. validated historical project records;
+4. confirmed counterpart and meeting evidence;
+5. reviewed proposal artifacts for LDT4SSC, SECTEI, FTMX, Aguascalientes,
+   Korea, Japan, CES, GIZ, IDB/CAF, and other opportunity tracks;
+6. public repositories, research papers, platform documentation, and technical
+   prototypes.
 
 ## Editorial Rule
 
