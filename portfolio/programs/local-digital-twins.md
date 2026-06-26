@@ -155,7 +155,7 @@ proposal-level integration targets.
 
 ### AI and scenario capabilities
 
-- AI-assisted dataset inspection and field mapping;
+- AI-enabled dataset inspection and field mapping;
 - provenance and missing-data checks;
 - semantic-pack binding drafts;
 - standards-output checks;

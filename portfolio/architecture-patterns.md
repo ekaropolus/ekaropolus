@@ -116,7 +116,8 @@ Design rules:
 
 ## AI-Assisted Research Operations
 
-Used in Hadox, proposal work, sector research, and internal operating memory.
+Used in Hadox, proposal work, sector research, and research operations
+infrastructure.
 
 ```text
 session / source / document
@@ -128,6 +129,6 @@ session / source / document
 ```
 
 This is the bridge between internal research operations and the GitHub
-portfolio. Operating records can identify candidate case studies, but
+portfolio. Operating records can identify potential case studies, but
 publication should pass through a human editorial review and the client-ID
 protocol.

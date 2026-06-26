@@ -3,7 +3,7 @@
 This is an index. Each capability has its own technical note.
 
 The purpose is to make the portfolio reviewable as a real technical record, not
-as a short CV skills list.
+as a short skills list.
 
 ## Current core capabilities
 

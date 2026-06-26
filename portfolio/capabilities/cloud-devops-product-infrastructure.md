@@ -25,7 +25,7 @@ behind research platforms, prototypes, public pages, and internal tools.
 
 - Hadox and Polisplexity web surfaces.
 - EVA Breast Cancer Archive Platform.
-- Research Operations Ledger and operating-memory platform.
+- Research Operations Ledger and research-operations infrastructure.
 - Public opportunity radar.
 - Internal CRM/export workflows.
 - Research platform deployment.
@@ -51,7 +51,7 @@ behind research platforms, prototypes, public pages, and internal tools.
 
 - `PRD-002` - Hadox Scientific Intelligence.
 - `PRD-003` - EVA Breast Cancer Archive Platform.
-- Research Operations Ledger and operating-memory platform.
+- Research Operations Ledger and research-operations infrastructure.
 
 ## Private boundary
 

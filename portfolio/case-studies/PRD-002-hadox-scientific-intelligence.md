@@ -25,7 +25,7 @@ discipline it can also destroy traceability.
 
 Hadox builds evidence-to-decision systems. The core pattern is to preserve source
 lineage while creating normalized and enriched layers that can support research,
-strategy, public platforms, dashboards, diligence, and AI-assisted workflows.
+strategy, public platforms, dashboards, diligence, and AI-enabled workflows.
 
 The operating principle is that the evidence base must outlive the report. A
 proposal, dashboard, or decision memo should be generated from a structured
@@ -112,6 +112,6 @@ Public / partial. Client and institution-specific work should use anonymized IDs
 ## What this demonstrates
 
 - Technical design of source-grounded research systems.
-- AI-assisted institutional analysis.
+- AI-enabled institutional analysis.
 - Evidence architecture for public-sector and scientific work.
 - Ability to convert messy work streams into reusable intelligence assets.

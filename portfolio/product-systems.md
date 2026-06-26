@@ -35,7 +35,7 @@ Purpose:
 
 Hadox builds scientific intelligence infrastructure: systems that convert
 fragmented evidence into source-grounded maps, reports, data rooms, dashboards,
-and AI-assisted decision workflows.
+and AI-enabled decision workflows.
 
 Current product lines:
 
@@ -43,7 +43,7 @@ Current product lines:
 - Country and sector intelligence surfaces.
 - Research archives.
 - Evidence vaults.
-- AI-assisted concept-note and proposal workflows.
+- AI-enabled concept-note and proposal workflows.
 - Public-sector intelligence systems.
 
 ## Ekaropolus Lab

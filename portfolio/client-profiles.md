@@ -32,7 +32,7 @@ supports a partner, proposal, application, research, or ecosystem route.
 
 | Organization | Relationship type | Relevant workstream |
 | --- | --- | --- |
-| UNAM / Facultad de Ciencias | academic / research | Physics, scientific collaboration, Eva-linked academic routes, research CV support, and digital-twin proposal work. |
+| UNAM / Facultad de Ciencias | academic / research | Physics, scientific collaboration, Eva-linked academic routes, research profile support, and digital-twin proposal work. |
 | CIMAT | research / HPC infrastructure | Supercomputing access, OpenMPI/HPC exploration, advanced computing documentation, and local digital twin processing paths. |
 | Radboud University | academic / research | Research background and academic profile context. |
 | SECTEI CDMX | public-sector / proposal | CDMX scientific and technological research call; digital twins, territorial intelligence, and public-interest research framing. |
@@ -44,7 +44,7 @@ supports a partner, proposal, application, research, or ecosystem route.
 | Tec de Monterrey / city innovation routes | academic / urban innovation | Urban intelligence, entrepreneurship, center-of-cities style collaboration routes; exact unit and address need verification before formal use. |
 | ISD | partner / consulting | Strategy, social innovation, fintech, and proposal collaboration, including FTMX-related work. |
 | TAFF | partner / consulting | Chile, fintech, circular economy, strategy, and proposal collaboration. |
-| FinTech Mexico / FTMX | industry association / proposal route | Libro 2030 and Insights 2027 proposal, AI-assisted research methodology, sector intelligence, and consultant enablement. |
+| FinTech Mexico / FTMX | industry association / proposal route | Libro 2030 and Insights 2027 proposal, AI-enabled research methodology, sector intelligence, and consultant enablement. |
 | GIZ Mexico | development / procurement route | Nature-based solutions, climate, public policy, and technical tender/opportunity routing. |
 | BID / IDB | development finance / lead route | Public-sector and regional development opportunity mapping. |
 | CAF | development finance / lead route | Regional development opportunity mapping. |
@@ -126,7 +126,7 @@ cleared.
 | CL-ENT-CPG-001 | beverage / consumer-goods enterprise | ERP, logistics, reporting, sales/operations data, and integration work in distributed commercial operations. |
 | CL-ENT-ENERGY-001 | oil, gas, or energy enterprise | Enterprise systems, compliance, operational data, reporting, and integration work in regulated industrial contexts. |
 | CL-ENT-IND-001 | industrial / manufacturing enterprise | Business systems, data workflows, automation-adjacent process support, and technical delivery for complex operations. |
-| CL-FIN-001 | finance / fintech / financial-sector ecosystem | FinTech Mexico proposal route, market intelligence, AI-assisted research, and strategic publication support. |
+| CL-FIN-001 | finance / fintech / financial-sector ecosystem | FinTech Mexico proposal route, market intelligence, AI-enabled research, and strategic publication support. |
 | CL-CORP-INNOV-001 | corporate innovation / strategy organization | Discovery, innovation strategy, AI platform feasibility, workflow integration, and research-to-action design. |
 
 ## Public-Sector, Development, and Civic Client Profiles
@@ -164,7 +164,7 @@ generic accelerator scouting rows.
 
 The next pass should add evidence-backed detail from:
 
-1. public CV and employment evidence;
+1. public profile and employment evidence;
 2. verified commercial and enterprise project records;
 3. validated historical project records;
 4. confirmed counterpart and meeting evidence;

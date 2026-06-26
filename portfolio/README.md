@@ -1,6 +1,6 @@
 # Technical Portfolio
 
-This portfolio is the public, technical layer behind my CV.
+This portfolio is a public technical dossier.
 
 It is designed to show capabilities, products, research lines, software systems,
 and applied work without exposing client names, confidential documents, or
@@ -10,7 +10,7 @@ client or partner context.
 
 ## Why this exists
 
-My work does not fit cleanly into a conventional CV. It combines physics,
+My work does not fit cleanly into a short biography. It combines physics,
 complex systems, artificial intelligence, digital twins, public policy,
 scientific intelligence, software engineering, public-sector consulting,
 innovation programs, and research operations.

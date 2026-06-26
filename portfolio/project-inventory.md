@@ -1,7 +1,7 @@
 # Project and Proposal Inventory
 
-This file is the working project layer behind the CV. It is broader than a
-portfolio page: it includes shipped platforms, proposals, concept notes,
+This file is a public technical project layer. It is broader than a portfolio
+page: it includes shipped platforms, proposals, concept notes,
 research lines, opportunity applications, prototypes, public-sector projects,
 enterprise work, and operating systems.
 
@@ -16,22 +16,22 @@ Every item should eventually have:
 - role;
 - status;
 - client/partner visibility rule;
-- CV angle;
+- public portfolio angle;
 - whether it should become a case study, capability note, product page, or
   proposal artifact.
 
 ## Current Project Slate
 
 These are the active project and proposal lines that should be treated as the
-backbone for current CV development.
+backbone for the public project dossier.
 
-| No. | Project line | Public CV angle | Status for CV |
+| No. | Project line | Public angle | Portfolio status |
 | --- | --- | --- | --- |
 | 01 | CES Las Vegas | Startup exhibition, innovation awards, speaker/judge positioning, international tech ecosystem. | Active route / evidence-backed. |
 | 02 | Logical Digital Twins | Early digital twin strategy and conceptual architecture. | Needs merge into LDT program. |
-| 03 | TSW 8M | Startup/event or innovation-program route. | Verify before public detail. |
-| 04 | GITMA | Technical/proposal route. | Verify before public detail. |
-| 05 | Distrito Innovacion Puebla | City/innovation district route. | Verify exact organization and current status. |
+| 03 | TSW 8M | Startup/event or innovation-program route. | Under review. |
+| 04 | GITMA | Technical/proposal route. | Under review. |
+| 05 | Distrito Innovacion Puebla | City/innovation district route. | Under review. |
 | 06 | Polisplexity LDT4SSC | European local digital twins, city cohort, EU partners, technical proposal architecture. | Core active program. |
 | 07 | Cornell | Academic/startup/research route. | Research/application evidence. |
 | 08 | Nvidia | AI/GPU/startup infrastructure route. | Ecosystem/program evidence. |
@@ -41,12 +41,12 @@ backbone for current CV development.
 | 12 | Turquia | Turkey/Gaziantep/LDT ecosystem route. | Connect to LDT program. |
 | 13 | Japoneses | Japan research host, MIF, AIST/Mirai, fellowship route. | Active research application route. |
 | 14 | Innovafest | Innovation festival, Red Global MX, outreach and event operations. | Public event/program evidence. |
-| 15 | Coahuila | Public-sector AI or state route. | Needs verification. |
-| 16 | Secihti | Science/technology public call or ecosystem route. | Needs verification. |
+| 15 | Coahuila | Public-sector AI or state route. | Under review. |
+| 16 | Secihti | Science/technology public call or ecosystem route. | Under review. |
 | 17 | NAFIN | Development finance / opportunity route. | Lead tracking. |
-| 18 | INE | Public-sector procurement or opportunity route. | Needs verification. |
-| 19 | BE Discovery Platform | Enterprise AI discovery / workflow integration platform. | Strong anonymized case candidate. |
-| 20 | BE Selection | AI/vendor or platform-selection support. | Strong anonymized case candidate. |
+| 18 | INE | Public-sector procurement or opportunity route. | Under review. |
+| 19 | BE Discovery Platform | Enterprise AI discovery / workflow integration platform. | Strong anonymized case-study route. |
+| 20 | BE Selection | AI/vendor or platform-selection support. | Strong anonymized case-study route. |
 | 21 | Hadox App Platform | Scientific intelligence and internal platform architecture. | Product/system page. |
 | 22 | Hadox Public Web | Public web and content infrastructure. | Product/system page. |
 | 23 | Hadox operations CRM | Program and relationship-management tooling. | Internal systems capability. |
@@ -57,32 +57,32 @@ backbone for current CV development.
 | 28 | Version-control infrastructure | Self-hosted version-control and technical control-plane work. | Infrastructure capability. |
 | 29 | CI/CD infrastructure | Deployment, testing, and automation infrastructure. | Infrastructure capability. |
 | 30 | Twin Base Studio | Open local digital twin studio, city data, GIS/BIM, operational surfaces. | Core product case. |
-| 31 | Atlas Studio | Spatial/atlas visualization or data product line. | Needs source review. |
-| 32 | OEPPEH BI Stack | Institutional BI, data platform, filtered profiles, public portal. | Product/case candidate. |
-| 33 | Maker center | Maker/education/innovation space route. | Needs verification. |
-| 34 | Diplomado ERP e Inteligencia Artificial SAP | Training, SAP, AI, enterprise education. | Strong CV education/product angle. |
+| 31 | Atlas Studio | Spatial/atlas visualization or data product line. | Under review. |
+| 32 | OEPPEH BI Stack | Institutional BI, data platform, filtered profiles, public portal. | Product/case-study route. |
+| 33 | Maker center | Maker/education/innovation space route. | Under review. |
+| 34 | Diplomado ERP e Inteligencia Artificial SAP | Training, SAP, AI, enterprise education. | Strong education/product angle. |
 | 35 | Investor's deck | Fundraising narrative and startup positioning. | Supporting artifact. |
 | 36 | MOOC GIZ | Climate/NbS/development training route. | Proposal/training evidence. |
 | 37 | SECTEI CDMX | Territorial intelligence, digital twins, academic-public proposal. | Proposal submitted/closed route. |
 | 38 | Tallinn Old Town Freight Evidence - Polisplexity | Freight, EVs, robot delivery, city evidence, VAT/business evidence angle. | Active concept-note case. |
 | 39 | HARD2SCALE Material Flow Intelligence | Material flows, circular economy, Chile fit, industrial intelligence. | Accelerator/proposal route. |
-| 40 | FTMX Libro 2030 e Insights 2027 | AI-assisted financial research, market intelligence, consultant enablement. | Strong proposal/case candidate. |
+| 40 | FTMX Libro 2030 e Insights 2027 | AI-enabled financial research, market intelligence, consultant enablement. | Strong proposal/case-study route. |
 | 41 | EIT Urban Mobility AI MOVE | Urban mobility AI opportunity route. | Opportunity/proposal route. |
 | 42 | SE Canada - Videos productos | Startup/product market-entry and video assets. | Application/media route. |
 | 43 | Polisplexity SE | Sweden/EU route for Polisplexity expansion. | Legal/partner route. |
 | 44 | SRE Tecnologias Emergentes - Nodo Polisplexity | Emerging technologies, foreign affairs, diaspora, public-interest tech. | Ecosystem/proposal route. |
-| 45 | Piloto simplificacion gubernamental AGS | Government simplification, regulatory improvement, public-service intelligence. | Strong public-sector case candidate. |
-| 46 | IINCOT | Research/conference/proposal route. | Needs verification. |
-| 90 | Platform and systems operations | Historical project registry and internal operations backbone. | Internal evidence source. |
+| 45 | Piloto simplificacion gubernamental AGS | Government simplification, regulatory improvement, public-service intelligence. | Strong public-sector case-study route. |
+| 46 | IINCOT | Research/conference/proposal route. | Under review. |
+| 90 | Platform and systems operations | Historical project registry and internal operations backbone. | Private operations context. |
 
 ## Emerging Workstreams
 
-These are recent workstreams that look like projects, prototypes, proposal
-packs, or reusable assets. They should be reviewed before the final CV pass.
+These are recent workstreams that can become products, case studies, public
+assets, or reusable technical methods.
 
-| Portfolio ID | Public-safe name | Project interpretation | CV use |
+| Portfolio ID | Public-safe name | Project interpretation | Portfolio use |
 | --- | --- | --- | --- |
-| OPS-001 | Research Operations Ledger | Editorial index, structured operating memory, and project intelligence layer. | AI operations / personal knowledge infrastructure. |
+| OPS-001 | Research Operations Ledger | Structured project record and project intelligence layer. | Research operations / knowledge infrastructure. |
 | SCI-001 | Diaspora Research Intelligence | Researcher discovery and diaspora intelligence workflow. | Scientific network intelligence / data product. |
 | FIN-001 | Patrimonial Control System | Internal finance and data-governance tooling. | Internal finance/data governance tooling. |
 | XR-001 | Image-to-3D Lab | General 3D reconstruction, splatting, photogrammetry, and asset pipeline lab. | 3D/XR technical capability. |
@@ -100,7 +100,7 @@ packs, or reusable assets. They should be reviewed before the final CV pass.
 | GOV-002 | SECTEI Proposal Operations | Public proposal operations and submission package. | Public proposal operations. |
 | OPS-002 | UK Business Activation Evidence | UK operational activation and compliance evidence. | Business operations / compliance evidence. |
 | START-003 | Startup Competition Assets | Startup pitch and product narrative material. | Startup pitch and product narrative. |
-| DATA-001 | Sports / Live-Data Lab | Live-data product or simulation route. | Needs source review. |
+| DATA-001 | Sports / Live-Data Lab | Live-data product or simulation route. | Under review. |
 | CITY-002 | Housing and Construction Radar | Housing/construction opportunity radar. | Urban/housing intelligence. |
 | GEO-001 | Spatial Atlas MVP | Map and atlas MVP. | Spatial product capability. |
 | XR-002 | Civic XR Demo | WebXR civic visualization demo. | XR/3D civic visualization. |
@@ -131,7 +131,7 @@ Core items:
 - vivienda/construction radar;
 - 3D/XR civic demos.
 
-CV narrative:
+Public narrative:
 
 > Built and coordinated open local digital twin infrastructure combining GIS,
 > BIM/IFC, PostGIS, semantic data layers, city-service scenarios, partner
@@ -151,7 +151,7 @@ Core items:
 - research diaspora discovery app;
 - Ronin/Harvard/Japan research routes.
 
-CV narrative:
+Public narrative:
 
 > Designed research software and scientific intelligence systems that transform
 > corpora, publications, institutional networks, and evidence into reproducible
@@ -170,7 +170,7 @@ Core items:
 - NAFIN / INE / development finance scouting;
 - Hidalgo Digital and older government routes from the historical record.
 
-CV narrative:
+Public narrative:
 
 > Developed public-sector AI and data-intelligence proposals for territorial
 > planning, service optimization, administrative simplification, innovation
@@ -187,7 +187,7 @@ Core items:
 - FinTech Mexico / FTMX Libro 2030 e Insights 2027;
 - historical retail, consumer goods, energy, industrial, and finance work.
 
-CV narrative:
+Public narrative:
 
 > Led and supported enterprise systems, ERP/SAP, data integration, reporting,
 > AI vendor selection, workflow discovery, and executive translation across
@@ -211,7 +211,7 @@ Core items:
 - EIT Urban Mobility AI MOVE;
 - Cornell / MIT / SFI / Harvard / Ronin routes.
 
-CV narrative:
+Public narrative:
 
 > Built and submitted international opportunity pipelines for civic AI,
 > digital twins, open-source infrastructure, startup acceleration, research
@@ -232,7 +232,7 @@ Core items:
 - MOOC GIZ;
 - SAP/AI diploma route.
 
-CV narrative:
+Public narrative:
 
 > Designed and delivered innovation programs, AI/hackathon experiences,
 > educational products, diaspora network activation, and public technical
@@ -252,16 +252,16 @@ Core items:
 - local opportunity CRM / CSV pack;
 - evidence-backed proposal operations.
 
-CV narrative:
+Public narrative:
 
 > Built the operating infrastructure behind research and proposal work:
-> self-hosted Git, CI/CD, automation, signing, CRM, operating ledger, finance control,
-> knowledge management, and AI-assisted editorial operations.
+> self-hosted Git, CI/CD, automation, signing, CRM, operating ledger, finance
+> control, knowledge management, and evidence-backed project operations.
 
 ## Historical Project Signal
 
-The historical project record should not be copied directly into the public CV,
-but it proves that the project map must include much more than current
+The historical project record should not be copied directly into the public
+portfolio, but it proves that the project map must include much more than current
 proposals. Notable historical clusters:
 
 - blockchain and financial digital transformation;
@@ -280,14 +280,14 @@ proposals. Notable historical clusters:
 
 ## What Still Needs a Deeper Pass
 
-1. Extract the long commercial CV and map SAP/Deloitte-era projects into
+1. Extract the long commercial record and map SAP/Deloitte-era projects into
    anonymized enterprise profiles.
 2. Create year-by-year public-safe project rows from the verified historical
    record.
 3. Review validated relationship evidence for active city and
    research-counterparty work.
 4. Promote strong items into separate case studies:
-   - FTMX AI-assisted research;
+   - FTMX evidence-backed research;
    - Aguascalientes simplification;
    - BE Discovery / Selection;
    - SECTEI CDMX;
@@ -297,9 +297,9 @@ proposals. Notable historical clusters:
    - Red Global MX diaspora intelligence.
 5. Maintain the private project-to-evidence map outside Git.
 
-## Public CV Use
+## Public Portfolio Use
 
-This inventory should feed the CV in four layers:
+This inventory should feed the public technical portfolio in four layers:
 
 1. **Selected flagship projects**: 8-12 deep, named or anonymized.
 2. **Project families**: 6-8 families showing technical range.

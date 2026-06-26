@@ -48,8 +48,8 @@ sources
 - Research-community and fellowship applications.
 - Proposal preparation.
 - Public-sector concept notes.
-- Editorial operating-memory extraction.
-- Portfolio candidate discovery.
+- Research-operations evidence extraction.
+- Portfolio evidence discovery.
 
 ## Outputs
 

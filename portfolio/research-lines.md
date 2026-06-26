@@ -39,7 +39,7 @@ Representative work:
 - Mexico / Netherlands / Belgium scientific intelligence surfaces.
 - EVA Breast Cancer Archive Platform.
 - ACE Electoral Intelligence migration and knowledge-system plan.
-- Internal research-operations platform and operating memory.
+- Internal research-operations platform and project intelligence layer.
 
 ## Urban Scaling, SAMI, and Multiscale City Methods
 
@@ -78,7 +78,7 @@ Representative work:
 - Public-policy graph models.
 - Electoral intelligence systems.
 - Government simplification observatories.
-- AI-assisted sector research and fintech intelligence.
+- AI-enabled sector research and fintech intelligence.
 - Local digital twin decision workflows.
 
 ## High-Performance Computing and Advanced Modeling

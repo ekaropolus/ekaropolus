@@ -34,10 +34,10 @@ turning the system into an untraceable black box.
 ## Current applications
 
 - Hadox Scientific Intelligence.
-- Editorial operating-memory layer.
+- Research-operations evidence layer.
 - Proposal and concept-note generation.
 - Public opportunity radar.
-- Technical portfolio candidate extraction.
+- Technical portfolio evidence organization.
 - Research and fellowship preparation.
 - Digital twin decision-support workflows.
 
@@ -50,7 +50,7 @@ turning the system into an untraceable black box.
 
 ## Outputs
 
-- AI-assisted briefs.
+- AI-enabled briefs.
 - Source-grounded concept notes.
 - Case-study drafts.
 - CRM updates.

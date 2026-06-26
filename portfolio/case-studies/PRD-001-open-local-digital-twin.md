@@ -96,7 +96,7 @@ Planning / pre-BIM:
 
 - parcels or building footprints;
 - zoning or planning constraints;
-- candidate project geometry;
+- project geometry options;
 - IFC or pre-BIM intake when available;
 - rule checks;
 - public explanation layer;

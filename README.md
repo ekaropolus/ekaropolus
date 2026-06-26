@@ -56,7 +56,7 @@ Older repositories in this account include coursework, forks, and historical exp
 ## Technical Portfolio
 
 This profile includes a public technical portfolio that goes deeper than a
-traditional CV:
+short biography:
 
 - Public site: [https://ekaropolus.github.io/ekaropolus/](https://ekaropolus.github.io/ekaropolus/)
 - [Research lines](portfolio/research-lines.md)
