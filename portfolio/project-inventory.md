@@ -75,43 +75,43 @@ backbone for current CV development.
 | 46 | IINCOT | Research/conference/proposal route. | Needs verification. |
 | 90 | Platform and systems operations | Historical project registry and internal operations backbone. | Internal evidence source. |
 
-## Recent Prototypes and Operating Systems
+## Emerging Workstreams
 
 These are recent workstreams that look like projects, prototypes, proposal
 packs, or reusable assets. They should be reviewed before the final CV pass.
 
-| Workstream | Project interpretation | CV use |
-| --- | --- | --- |
-| AI worklog and editorial operations | Worklog dashboard, editorial index, and structured operating memory for project work. | AI operations / personal knowledge infrastructure. |
-| Research diaspora intelligence | Researcher discovery and diaspora intelligence workflow. | Scientific network intelligence / data product. |
-| Patrimonial-control finance app | Internal finance and data-governance tooling. | Internal finance/data governance tooling. |
-| Image-to-3D lab | General 3D reconstruction, splatting, photogrammetry, and asset pipeline lab. | 3D/XR technical capability. |
-| Prenatal / personal digital twin prototype | Pregnancy/prenatal twin concept and web experience. | Consumer digital twin / health-adjacent prototype. |
-| Urban SAMI research engine | Research workflow engine for urban scaling and SAMI structures. | Research software / academic publication route. |
-| Tallinn freight evidence package | Tallinn freight and Old Town evidence concept package. | City logistics / digital twin proposal case. |
-| Nature-based solutions tender analysis | Development procurement and environmental intelligence. | Development procurement / environmental intelligence. |
-| Civic AI development-finance package | Development finance and civic AI proposal route. | Development finance / civic AI proposal. |
-| Forest and territorial intelligence concept | Forest, climate, and territorial intelligence route. | Climate and nature intelligence. |
-| Coastal and island-region intelligence concept | Coastal/island or city-region concept route. | Climate/territorial proposal route. |
-| Water tariff and utility analytics | Water tariff and public policy analytics route. | Public policy and utility intelligence. |
-| Space/business incubation route | Space/business incubation and UK market route. | Startup/internationalization route. |
-| AI energy application route | AI energy product/application route. | Startup/product application route. |
-| Open-source funding route | Open-source infrastructure funding route. | Open-source infrastructure funding. |
-| SECTEI submission operations | Public proposal operations and submission package. | Public proposal operations. |
-| UK business activation evidence | UK operational activation and compliance evidence. | Business operations / compliance evidence. |
-| Startup competition assets | Startup pitch and product narrative material. | Startup pitch and product narrative. |
-| Sports/live-data lab | Live-data product or simulation route. | Needs source review. |
-| Housing and construction radar | Housing/construction opportunity radar. | Urban/housing intelligence. |
-| Spatial atlas MVP | Map and atlas MVP. | Spatial product capability. |
-| Civic XR demo | WebXR civic visualization demo. | XR/3D civic visualization. |
-| Geospatial simulation demo | Unreal/Cesium civic XR and simulation demo. | 3D geospatial / simulation capability. |
-| Interactive 3D microworld | Three.js and microworld simulation prototype. | Interactive 3D/web capability. |
-| City-facing product surfaces | Public product and communications surfaces for city digital twin work. | LDT communications/productization. |
-| Public lab and talk pages | Public talk, lab, and product communication surfaces. | Thought leadership / speaking evidence. |
-| Diaspora event technology | Event and talent-network installation. | Event technology / diaspora network. |
-| Regional AI summit materials | AI summit and regional convening material. | Regional AI ecosystem and convening. |
-| Regional institutional package | Regional public/institutional package. | Regional public-sector proposal route. |
-| Government simplification package | Government simplification pilot package and handoff. | Government simplification case. |
+| Portfolio ID | Public-safe name | Project interpretation | CV use |
+| --- | --- | --- | --- |
+| OPS-001 | Research Operations Ledger | Editorial index, structured operating memory, and project intelligence layer. | AI operations / personal knowledge infrastructure. |
+| SCI-001 | Diaspora Research Intelligence | Researcher discovery and diaspora intelligence workflow. | Scientific network intelligence / data product. |
+| FIN-001 | Patrimonial Control System | Internal finance and data-governance tooling. | Internal finance/data governance tooling. |
+| XR-001 | Image-to-3D Lab | General 3D reconstruction, splatting, photogrammetry, and asset pipeline lab. | 3D/XR technical capability. |
+| DT-001 | Prenatal Digital Twin Prototype | Pregnancy/prenatal twin concept and web experience. | Consumer digital twin / health-adjacent prototype. |
+| RSH-001 | Urban SAMI Research Engine | Research workflow engine for urban scaling and SAMI structures. | Research software / academic publication route. |
+| CITY-001 | Tallinn Freight Evidence Package | Tallinn freight and Old Town evidence concept package. | City logistics / digital twin proposal case. |
+| ENV-001 | Nature-Based Solutions Intelligence | Development procurement and environmental intelligence. | Development procurement / environmental intelligence. |
+| DEV-001 | Civic AI Development-Finance Package | Development finance and civic AI proposal route. | Development finance / civic AI proposal. |
+| ENV-002 | Forest and Territorial Intelligence | Forest, climate, and territorial intelligence route. | Climate and nature intelligence. |
+| ENV-003 | Coastal and Island-Region Intelligence | Coastal/island or city-region concept route. | Climate/territorial proposal route. |
+| GOV-001 | Water and Utility Analytics | Water tariff and public policy analytics route. | Public policy and utility intelligence. |
+| START-001 | Space/Business Incubation Route | Space/business incubation and UK market route. | Startup/internationalization route. |
+| START-002 | AI Energy Application Route | AI energy product/application route. | Startup/product application route. |
+| OSS-001 | Open-Source Funding Route | Open-source infrastructure funding route. | Open-source infrastructure funding. |
+| GOV-002 | SECTEI Proposal Operations | Public proposal operations and submission package. | Public proposal operations. |
+| OPS-002 | UK Business Activation Evidence | UK operational activation and compliance evidence. | Business operations / compliance evidence. |
+| START-003 | Startup Competition Assets | Startup pitch and product narrative material. | Startup pitch and product narrative. |
+| DATA-001 | Sports / Live-Data Lab | Live-data product or simulation route. | Needs source review. |
+| CITY-002 | Housing and Construction Radar | Housing/construction opportunity radar. | Urban/housing intelligence. |
+| GEO-001 | Spatial Atlas MVP | Map and atlas MVP. | Spatial product capability. |
+| XR-002 | Civic XR Demo | WebXR civic visualization demo. | XR/3D civic visualization. |
+| GEO-002 | Geospatial Simulation Demo | Geospatial civic XR and simulation demo. | 3D geospatial / simulation capability. |
+| SIM-001 | Interactive 3D Microworld | Web-based microworld simulation prototype. | Interactive 3D/web capability. |
+| CITY-003 | City-Facing Product Surfaces | Public product and communications surfaces for city digital twin work. | LDT communications/productization. |
+| COMMS-001 | Public Lab and Talk Pages | Public talk, lab, and product communication surfaces. | Thought leadership / speaking evidence. |
+| NET-001 | Diaspora Event Technology | Event and talent-network installation. | Event technology / diaspora network. |
+| EVENT-001 | Regional AI Summit Materials | AI summit and regional convening material. | Regional AI ecosystem and convening. |
+| GOV-003 | Regional Institutional Package | Regional public/institutional package. | Regional public-sector proposal route. |
+| GOV-004 | Government Simplification Package | Government simplification pilot package and handoff. | Government simplification case. |
 
 ## Programs and Project Families
 
@@ -243,7 +243,7 @@ CV narrative:
 Core items:
 
 - Hadox operations CRM;
-- AI worklog and editorial operations;
+- OPS-001 Research Operations Ledger;
 - document-signing workflow platform;
 - automation hub;
 - version-control infrastructure;
@@ -255,7 +255,7 @@ Core items:
 CV narrative:
 
 > Built the operating infrastructure behind research and proposal work:
-> self-hosted Git, CI/CD, automation, signing, CRM, worklog, finance control,
+> self-hosted Git, CI/CD, automation, signing, CRM, operating ledger, finance control,
 > knowledge management, and AI-assisted editorial operations.
 
 ## Historical Project Signal
@@ -292,7 +292,7 @@ proposals. Notable historical clusters:
    - BE Discovery / Selection;
    - SECTEI CDMX;
    - Tallinn Old Town Freight;
-   - AI worklog and operating system;
+   - OPS-001 Research Operations Ledger;
    - CIMAT/HPC and local digital twin processing;
    - Red Global MX diaspora intelligence.
 5. Maintain the private project-to-evidence map outside Git.
