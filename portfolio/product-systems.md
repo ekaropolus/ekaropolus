@@ -5,7 +5,9 @@
 Public surface:
 
 - https://polisplexity.tech
+- https://twin.polisplexity.tech
 - https://github.com/polisplexity
+- https://lablab.ai/ai-hackathons/internet-of-agents/hadox-human-networks/polisplexity-the-internet-of-ai-cities
 
 Purpose:
 
@@ -23,13 +25,17 @@ Current product lines:
 - City-fragment XR / 3D analytical interfaces.
 - Planning-ready city twin workflows.
 - Interoperability and semantic city data routes.
+- Internet-of-agents style city services, including SAMI-style scaling
+  baselines and site-ranking workflows demonstrated through LabLab.ai.
 
 ## Hadox Research Labs
 
 Public surface:
 
 - https://hadox.org
+- https://app.hadox.org
 - https://github.com/Hadox-Research-Labs
+- https://lablab.ai/u/%40ekaropolus_master
 
 Purpose:
 
