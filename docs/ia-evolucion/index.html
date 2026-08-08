@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f3efe7">
-  <title>Revisión breve — IA, tecnología y evolución</title>
+  <title>Ampliación — IA, tecnología y evolución</title>
   <style>
     :root {
       --paper: #f3efe7;
@@ -14,7 +14,9 @@
       --accent: #a12b2b;
       --accent-dark: #762020;
       --soft: #e8e1d5;
-      --max: 920px;
+      --green: #315a48;
+      --amber: #8a5a1f;
+      --max: 980px;
       --body-size: 19px;
     }
 
@@ -31,7 +33,7 @@
       background: var(--paper);
       font-family: Georgia, "Times New Roman", serif;
       font-size: var(--body-size);
-      line-height: 1.72;
+      line-height: 1.7;
       text-rendering: optimizeLegibility;
     }
 
@@ -40,11 +42,16 @@
     a {
       color: var(--accent-dark);
       text-decoration-thickness: 1px;
-      text-underline-offset: 0.18em;
+      text-underline-offset: .18em;
     }
 
-    button, summary {
-      font: 700 14px/1 system-ui, -apple-system, "Segoe UI", sans-serif;
+    a:focus-visible, button:focus-visible, summary:focus-visible {
+      outline: 3px solid #d49f52;
+      outline-offset: 3px;
+    }
+
+    button, summary, .sans, .status, .case-meta, th {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
     }
 
     button {
@@ -54,13 +61,14 @@
       padding: 0 17px;
       color: var(--ink);
       background: transparent;
+      font-size: 14px;
+      font-weight: 750;
       cursor: pointer;
     }
 
     button:hover, button:focus-visible {
       color: var(--paper);
       background: var(--ink);
-      outline: none;
     }
 
     button.primary {
@@ -84,37 +92,37 @@
       max-width: var(--max);
       margin: 0 auto;
       padding: 11px 24px;
-      font: 650 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+      font: 700 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
     }
 
     .masthead {
       max-width: var(--max);
       margin: 0 auto;
-      padding: 38px 24px 78px;
+      padding: 42px 24px 72px;
     }
 
-    .eyebrow {
-      margin: 0 0 24px;
+    .eyebrow, .section-label {
+      margin: 0;
       color: var(--accent);
-      font: 800 12px/1.2 system-ui, -apple-system, "Segoe UI", sans-serif;
-      letter-spacing: .14em;
+      font: 800 12px/1.35 system-ui, -apple-system, "Segoe UI", sans-serif;
+      letter-spacing: .13em;
       text-transform: uppercase;
     }
 
     h1 {
-      max-width: 770px;
-      margin: 0;
-      font-size: clamp(3rem, 8.2vw, 6.8rem);
+      max-width: 890px;
+      margin: 23px 0 0;
+      font-size: clamp(3.2rem, 8.2vw, 7rem);
       font-weight: 500;
-      line-height: .94;
-      letter-spacing: -.055em;
+      line-height: .91;
+      letter-spacing: -.058em;
     }
 
     .dek {
-      max-width: 700px;
+      max-width: 760px;
       margin: 31px 0 0;
       color: var(--muted);
-      font-size: clamp(1.2rem, 2.6vw, 1.55rem);
+      font-size: clamp(1.2rem, 2.6vw, 1.6rem);
       line-height: 1.42;
     }
 
@@ -130,7 +138,7 @@
       z-index: 5;
       top: 0;
       border-block: 1px solid var(--line);
-      background: rgba(243, 239, 231, .96);
+      background: rgba(243, 239, 231, .97);
     }
 
     .reading-path nav {
@@ -156,35 +164,69 @@
     main {
       max-width: var(--max);
       margin: 0 auto;
-      padding: 0 24px 100px;
+      padding: 0 24px 108px;
     }
 
-    .quick-read {
+    section[id], details[id] { scroll-margin-top: 64px; }
+
+    .eva-brief {
       display: grid;
-      grid-template-columns: minmax(150px, .32fr) 1fr;
-      gap: clamp(28px, 6vw, 80px);
-      padding: 70px 0 84px;
+      grid-template-columns: minmax(170px, .34fr) 1fr;
+      gap: clamp(28px, 6vw, 82px);
+      margin-top: 62px;
+      padding: 34px clamp(24px, 5vw, 52px) 38px;
+      color: var(--paper);
+      background: var(--ink);
     }
 
-    .section-label {
-      margin: 7px 0 0;
-      color: var(--accent);
-      font: 800 12px/1.35 system-ui, -apple-system, "Segoe UI", sans-serif;
-      letter-spacing: .11em;
-      text-transform: uppercase;
-    }
+    .eva-brief .section-label { color: #e5a9a1; }
 
-    .quick-read h2, .insert h2, .edits h2 {
+    .eva-brief h2 {
       margin: 0;
-      font-size: clamp(2rem, 4.4vw, 3.6rem);
+      font-size: clamp(2rem, 4.5vw, 3.45rem);
       font-weight: 500;
       line-height: 1.02;
       letter-spacing: -.035em;
     }
 
+    .eva-list {
+      margin: 25px 0 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid #53605b;
+    }
+
+    .eva-list li {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      gap: 12px;
+      padding: 14px 0;
+      border-bottom: 1px solid #53605b;
+    }
+
+    .eva-list b {
+      color: #e5a9a1;
+      font: 800 13px/1.7 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    .quick-read {
+      display: grid;
+      grid-template-columns: minmax(170px, .34fr) 1fr;
+      gap: clamp(28px, 6vw, 82px);
+      padding: 82px 0 88px;
+    }
+
+    .quick-read h2, .chapter h2, .copy-section h2, .edits h2 {
+      margin: 0;
+      font-size: clamp(2.2rem, 5vw, 4.25rem);
+      font-weight: 500;
+      line-height: .98;
+      letter-spacing: -.04em;
+    }
+
     .verdict {
-      margin: 0 0 28px;
-      font-size: 1.22em;
+      margin: 0 0 30px;
+      font-size: 1.24em;
       line-height: 1.5;
     }
 
@@ -206,43 +248,261 @@
       font-size: .82em;
     }
 
-    .insert {
-      position: relative;
-      display: grid;
-      grid-template-columns: 78px 1fr;
-      column-gap: clamp(18px, 4vw, 46px);
-      padding: 74px 0 80px;
+    .chapter {
+      padding: 82px 0 90px;
       border-top: 2px solid var(--ink);
     }
 
-    .insert-number {
-      margin-top: -7px;
-      color: var(--accent);
-      font-size: 4.2rem;
-      line-height: 1;
-      letter-spacing: -.06em;
+    .chapter-head {
+      display: grid;
+      grid-template-columns: minmax(170px, .34fr) 1fr;
+      gap: clamp(28px, 6vw, 82px);
+      margin-bottom: 42px;
     }
 
-    .placement {
-      margin: 18px 0 35px;
+    .chapter-intro {
+      max-width: 720px;
+      margin: 27px 0 0;
       color: var(--muted);
-      font: 700 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 1.08em;
     }
 
-    .placement span {
-      color: var(--ink);
-      font-weight: 800;
+    .status-key {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin-top: 26px;
     }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    .status::before {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: currentColor;
+      content: "";
+    }
+
+    .status.established { color: var(--green); }
+    .status.study { color: var(--amber); }
+    .status.speculative { color: var(--accent); }
+
+    .table-wrap { overflow-x: auto; }
+
+    .evidence-table {
+      width: 100%;
+      min-width: 760px;
+      border-collapse: collapse;
+      border-top: 2px solid var(--ink);
+    }
+
+    .evidence-table th, .evidence-table td {
+      padding: 17px 14px 18px 0;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .evidence-table th {
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .evidence-table td:first-child { width: 18%; font-weight: 700; }
+    .evidence-table td:nth-child(2) { width: 16%; }
+    .evidence-table td:nth-child(3) { width: 33%; }
 
     .proposed-text {
       position: relative;
       margin: 0;
-      padding: 26px clamp(22px, 4vw, 38px) 32px;
-      border-left: 5px solid var(--accent);
+      padding: 30px clamp(24px, 5vw, 48px) 35px;
+      border-left: 6px solid var(--accent);
       background: var(--soft);
     }
 
-    .proposed-text p { margin: 0; }
+    .proposed-text p { margin: 0 0 1.15em; }
+    .proposed-text p:last-child { margin-bottom: 0; }
+
+    .placement {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font: 700 14px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    .placement span { color: var(--ink); font-weight: 850; }
+
+    .source-note {
+      margin: 25px 0 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .9em;
+    }
+
+    .source-note li {
+      padding: 13px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .source-note strong {
+      color: var(--ink);
+      font: 800 12px/1.3 system-ui, -apple-system, "Segoe UI", sans-serif;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .history-line {
+      margin: 8px 0 0;
+      padding: 0;
+      list-style: none;
+      border-left: 2px solid var(--ink);
+    }
+
+    .history-line li {
+      position: relative;
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 24px;
+      padding: 0 0 30px 30px;
+    }
+
+    .history-line li::before {
+      position: absolute;
+      top: 9px;
+      left: -7px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+      content: "";
+    }
+
+    .history-line strong {
+      font: 850 13px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    .history-line p { margin: 0; }
+
+    .case-ledger {
+      margin-top: 5px;
+      border-top: 2px solid var(--ink);
+    }
+
+    .case {
+      display: grid;
+      grid-template-columns: 145px 1fr minmax(150px, .28fr);
+      gap: clamp(20px, 4vw, 48px);
+      padding: 34px 0 38px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .case-number {
+      color: var(--accent);
+      font-size: 3.7rem;
+      line-height: .9;
+      letter-spacing: -.06em;
+    }
+
+    .case h3 {
+      margin: 0 0 12px;
+      font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+      font-weight: 500;
+      line-height: 1.04;
+      letter-spacing: -.025em;
+    }
+
+    .case p { margin: 0 0 13px; }
+    .case p:last-child { margin-bottom: 0; }
+
+    .case-meta {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .case-meta strong {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--ink);
+      font-size: 11px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .case-meta a { display: inline-block; margin-top: 8px; }
+
+    .precision {
+      margin: 24px 0 0;
+      padding: 19px 22px;
+      border-block: 1px solid var(--accent);
+      color: var(--accent-dark);
+      font-size: .95em;
+    }
+
+    .knowledge-chain {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: chain;
+      border-top: 2px solid var(--ink);
+    }
+
+    .knowledge-chain li {
+      display: grid;
+      grid-template-columns: 76px minmax(200px, .55fr) 1fr;
+      gap: clamp(18px, 4vw, 42px);
+      padding: 28px 0 31px;
+      border-bottom: 1px solid var(--line);
+      counter-increment: chain;
+    }
+
+    .knowledge-chain li::before {
+      color: var(--accent);
+      font-size: 3rem;
+      line-height: 1;
+      content: counter(chain, decimal-leading-zero);
+    }
+
+    .knowledge-chain h3 {
+      margin: 3px 0 0;
+      font-size: 1.45rem;
+      font-weight: 500;
+      line-height: 1.15;
+    }
+
+    .knowledge-chain p { margin: 0; }
+
+    .fresh-paper {
+      margin-top: 30px;
+      padding: 25px 28px;
+      color: var(--paper);
+      background: var(--accent-dark);
+    }
+
+    .fresh-paper p { margin: 0; }
+    .fresh-paper a { color: white; }
+
+    .copy-section {
+      padding: 82px 0 90px;
+      border-top: 2px solid var(--ink);
+    }
+
+    .copy-section .chapter-head { margin-bottom: 30px; }
 
     .copy-row {
       display: flex;
@@ -251,22 +511,16 @@
     }
 
     .copy-row button {
-      min-height: 42px;
-      padding-inline: 14px;
+      min-height: 44px;
+      padding-inline: 15px;
       font-size: 12px;
-    }
-
-    .note {
-      margin: 24px 0 0;
-      color: var(--muted);
-      font-size: .91em;
     }
 
     .edits {
       display: grid;
-      grid-template-columns: minmax(150px, .32fr) 1fr;
-      gap: clamp(28px, 6vw, 80px);
-      padding: 76px 0 84px;
+      grid-template-columns: minmax(170px, .34fr) 1fr;
+      gap: clamp(28px, 6vw, 82px);
+      padding: 82px 0 88px;
       border-top: 2px solid var(--ink);
     }
 
@@ -291,7 +545,7 @@
     .right { font-weight: 700; }
 
     details {
-      padding: 24px 0;
+      padding: 25px 0 30px;
       border-block: 2px solid var(--ink);
     }
 
@@ -299,25 +553,49 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      min-height: 50px;
+      min-height: 52px;
       cursor: pointer;
       color: var(--ink);
-      font-size: 16px;
+      font-size: 17px;
+      font-weight: 800;
       letter-spacing: .02em;
       list-style: none;
     }
 
     summary::-webkit-details-marker { display: none; }
-    summary::after { content: "+"; color: var(--accent); font-size: 24px; }
+    summary::after { color: var(--accent); font-size: 25px; content: "+"; }
     details[open] summary::after { content: "−"; }
 
-    .references {
-      margin: 24px 0 8px;
-      padding-left: 1.25em;
-      font-size: .87em;
+    .reference-group {
+      display: grid;
+      grid-template-columns: minmax(165px, .3fr) 1fr;
+      gap: 26px;
+      padding: 26px 0 5px;
+      border-top: 1px solid var(--line);
     }
 
-    .references li { margin-bottom: 16px; padding-left: 7px; }
+    .reference-group h3 {
+      margin: 4px 0 0;
+      font: 850 12px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    .references {
+      margin: 0;
+      padding-left: 1.25em;
+      font-size: .88em;
+    }
+
+    .references li { margin-bottom: 17px; padding-left: 7px; }
+
+    .references small {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
 
     footer {
       max-width: var(--max);
@@ -347,31 +625,58 @@
 
     #toast.show { opacity: 1; transform: translateY(0); }
 
-    @media (max-width: 680px) {
+    @media (max-width: 760px) {
       .masthead { padding-top: 29px; padding-bottom: 54px; }
-      h1 { font-size: clamp(3.2rem, 17vw, 5rem); }
+      h1 { font-size: clamp(3.15rem, 16.8vw, 5rem); }
       .dek { margin-top: 24px; }
       .controls { display: grid; grid-template-columns: 1fr 1fr; }
       .controls button:first-child { grid-column: 1 / -1; }
-      .quick-read, .edits { display: block; padding-block: 52px 62px; }
-      .quick-read .section-label, .edits .section-label { margin-bottom: 24px; }
-      .insert { grid-template-columns: 48px 1fr; padding-block: 56px 60px; }
-      .insert-number { font-size: 3.1rem; }
-      .insert h2 { font-size: clamp(1.85rem, 9vw, 2.5rem); }
-      .proposed-text { margin-left: -66px; margin-top: 4px; }
-      .copy-row { margin-left: -66px; }
-      .note { margin-left: -66px; }
+      .eva-brief, .quick-read, .chapter-head, .edits { display: block; }
+      .eva-brief { margin-top: 44px; }
+      .eva-brief .section-label, .quick-read .section-label, .chapter-head .section-label, .edits .section-label { margin-bottom: 24px; }
+      .quick-read, .chapter, .copy-section, .edits { padding-block: 58px 66px; }
+      .chapter-head { margin-bottom: 31px; }
+      .case { grid-template-columns: 62px 1fr; gap: 16px; }
+      .case-number { font-size: 3rem; }
+      .case-meta { grid-column: 2; padding-top: 7px; }
+      .knowledge-chain li { grid-template-columns: 52px 1fr; gap: 12px 17px; }
+      .knowledge-chain li::before { grid-row: 1 / span 2; font-size: 2.25rem; }
+      .knowledge-chain p { grid-column: 2; }
+      .history-line li { grid-template-columns: 1fr; gap: 5px; }
+      .reference-group { grid-template-columns: 1fr; gap: 12px; }
       .edit-list li { grid-template-columns: 1fr; gap: 2px; }
-      .arrow { text-align: left; transform: rotate(90deg); width: 18px; }
+      .arrow { width: 18px; text-align: left; transform: rotate(90deg); }
       .reading-path nav { gap: 19px; }
+      .proposed-text { padding-inline: 20px; }
+      .table-wrap { overflow: visible; }
+      .evidence-table { display: block; min-width: 0; }
+      .evidence-table thead { display: none; }
+      .evidence-table tbody, .evidence-table tr, .evidence-table td { display: block; width: 100%; }
+      .evidence-table tr { padding: 22px 0 23px; border-bottom: 1px solid var(--line); }
+      .evidence-table td, .evidence-table td:first-child, .evidence-table td:nth-child(2), .evidence-table td:nth-child(3) {
+        width: 100%;
+        padding: 0 0 13px;
+        border: 0;
+      }
+      .evidence-table td:last-child { padding-bottom: 0; }
+      .evidence-table td::before {
+        display: block;
+        margin-bottom: 4px;
+        color: var(--muted);
+        font: 800 10px/1.3 system-ui, -apple-system, "Segoe UI", sans-serif;
+        letter-spacing: .09em;
+        text-transform: uppercase;
+        content: attr(data-label);
+      }
     }
 
     @media print {
       .road-note, .controls, .reading-path, .copy-row, #toast { display: none !important; }
-      body { background: white; color: black; font-size: 12pt; }
+      body { color: black; background: white; font-size: 12pt; }
       .masthead, main, footer { max-width: none; }
       .masthead { padding-bottom: 35px; }
-      .insert, .edits, .quick-read { break-inside: avoid; }
+      .chapter, .case, .knowledge-chain li { break-inside: avoid; }
+      .eva-brief, .fresh-paper { color: black; background: #eee; }
       a { color: black; text-decoration: none; }
     }
 
@@ -383,15 +688,15 @@
 </head>
 <body>
   <div class="road-note">
-    <p>Si tú conduces, no leas esta página. Activa “Escuchar” o revísala cuando el vehículo esté detenido.</p>
+    <p>Si tú conduces, no leas esta página. Activa “Escuchar síntesis” o revísala cuando el vehículo esté detenido.</p>
   </div>
 
   <header class="masthead">
-    <p class="eyebrow">Revisión editorial · lectura móvil</p>
+    <p class="eyebrow">Ampliación documental · solicitud de Eva</p>
     <h1>IA, tecnología y evolución</h1>
-    <p class="dek speakable">Qué conviene agregar al documento, dónde colocarlo y qué afirmaciones necesitan precisión científica.</p>
+    <p class="dek audio-summary">Una investigación ampliada para integrar evolución cultural y biológica, adaptaciones humanas concretas y los casos recientes en que la IA diseña proteínas, genes y genomas que después se validan en el laboratorio.</p>
     <div class="controls" aria-label="Controles de lectura">
-      <button class="primary" id="listenBtn" type="button">Escuchar el resumen</button>
+      <button class="primary" id="listenBtn" type="button">Escuchar síntesis</button>
       <button id="stopBtn" type="button">Detener audio</button>
       <button id="textBtn" type="button" aria-pressed="false">Texto más grande</button>
     </div>
@@ -399,97 +704,327 @@
 
   <div class="reading-path">
     <nav aria-label="Ruta de lectura">
-      <a href="#resumen">Resumen</a>
-      <a href="#marco">Marco evolutivo</a>
+      <a href="#encargo">Encargo de Eva</a>
+      <a href="#resumen">Conclusión</a>
+      <a href="#mapa">Mapa de evidencia</a>
+      <a href="#tecnologia">Tecnología</a>
       <a href="#adaptaciones">Adaptaciones</a>
-      <a href="#proteinas">Proteínas y genomas</a>
-      <a href="#correcciones">Correcciones</a>
-      <a href="#referencias">Referencias</a>
+      <a href="#proteinas">IA biológica</a>
+      <a href="#texto-listo">Texto listo</a>
+      <a href="#referencias">Artículos</a>
     </nav>
   </div>
 
   <main>
-    <section class="quick-read" id="resumen">
-      <p class="section-label">En 30 segundos</p>
+    <section class="eva-brief" id="encargo">
+      <p class="section-label">La parte importante</p>
       <div>
-        <h2>La idea central</h2>
-        <p class="verdict speakable"><strong>Sí conviene incorporarlo.</strong> La sección evolutiva es sólida, pero depende casi enteramente de Robert C. Brooks y todavía no incluye el ejemplo más convincente de proteínas y genomas diseñados con inteligencia artificial.</p>
-        <ul class="quick-points speakable">
-          <li><strong>1.</strong> Agregar construcción de nicho y evolución cultural.</li>
-          <li><strong>2.</strong> Usar anemia falciforme y CCR5-Δ32 como ejemplos, con matices.</li>
-          <li><strong>3.</strong> Mostrar que el conocimiento nuevo aparece cuando los diseños de IA se validan experimentalmente.</li>
+        <h2>Esto es exactamente lo que pidió Eva</h2>
+        <ul class="eva-list audio-summary">
+          <li><b>01</b><span>IA y evolución.</span></li>
+          <li><b>02</b><span>Tecnología y evolución.</span></li>
+          <li><b>03</b><span>Adaptaciones, como anemia falciforme o resistencia al VIH.</span></li>
+          <li><b>04</b><span>Ejemplos y artículos concretos.</span></li>
         </ul>
       </div>
     </section>
 
-    <section class="insert" id="marco">
-      <div class="insert-number" aria-hidden="true">1</div>
+    <section class="quick-read" id="resumen">
+      <p class="section-label">Conclusión ejecutiva</p>
       <div>
-        <h2>Ampliar el marco evolutivo</h2>
-        <p class="placement"><span>Dónde va:</span> después de la exposición de Brooks y antes del párrafo dedicado a Bruno Latour.</p>
-        <blockquote class="proposed-text speakable" id="text-marco">
-          <p>Esta posibilidad puede situarse dentro de una tradición más amplia de la teoría evolutiva. Richard Lewontin subrayó que los organismos no sólo se adaptan a un ambiente previamente dado, sino que también lo transforman. Kevin Laland, John Odling-Smee y Marcus Feldman formalizaron esta relación mediante el concepto de construcción de nicho: al modificar su entorno, los organismos alteran las presiones de selección que actuarán sobre ellos y sus descendientes. En las sociedades humanas, la cultura y la tecnología amplifican extraordinariamente esta capacidad. Desde esta perspectiva, la inteligencia artificial forma parte de un nuevo nicho sociotécnico que transforma el trabajo, la educación, la atención, la elección de pareja y el acceso a la reproducción. Sus efectos inmediatos serán principalmente culturales, pero podrían adquirir relevancia biológica si producen diferencias heredables y persistentes en supervivencia o reproducción.</p>
-        </blockquote>
-        <div class="copy-row"><button type="button" data-copy="text-marco">Copiar este párrafo</button></div>
+        <h2>La tesis que sí puede sostenerse</h2>
+        <p class="verdict audio-summary"><strong>La IA ya participa en la evolución cultural y modifica el ambiente social y técnico.</strong> Todavía no hay evidencia de que haya producido una respuesta genética en seres humanos. Para hablar de evolución biológica tendría que demostrarse que un rasgo heredable cambia de manera persistente la supervivencia o el éxito reproductivo durante varias generaciones.</p>
+        <ul class="quick-points audio-summary">
+          <li><strong>Bien establecido.</strong> Cultura y tecnología pueden crear nichos que cambian las presiones de selección; la ganadería lechera, la agricultura y la urbanización ofrecen antecedentes claros.</li>
+          <li><strong>En investigación.</strong> Algoritmos de recomendación, educación, empleo, salud y emparejamiento ya modifican conductas, pero todavía no se ha demostrado una consecuencia genética acumulada.</li>
+          <li><strong>Vía directa, pero limitada.</strong> La selección de embriones y una eventual edición de la línea germinal podrían cambiar frecuencias genéticas; hoy existen límites técnicos, regulatorios y éticos importantes.</li>
+          <li><strong>Conocimiento nuevo.</strong> La IA puede generar hipótesis y diseños biológicos novedosos. Sólo se convierten en conocimiento científico cuando la síntesis y el experimento confirman que funcionan.</li>
+        </ul>
       </div>
     </section>
 
-    <section class="insert" id="adaptaciones">
-      <div class="insert-number" aria-hidden="true">2</div>
-      <div>
-        <h2>Incluir adaptaciones concretas</h2>
-        <p class="placement"><span>Dónde va:</span> inmediatamente después del marco de construcción de nicho.</p>
-        <blockquote class="proposed-text speakable" id="text-adaptaciones">
-          <p>La historia evolutiva humana ofrece ejemplos concretos de esta interacción entre ambiente y selección. El alelo HbS, asociado con la anemia falciforme cuando se hereda en dos copias, se mantiene en determinadas poblaciones porque los individuos heterocigotos presentan protección frente a la malaria grave. Investigaciones recientes muestran, además, que la eficacia de esa protección depende del genotipo de <em>Plasmodium falciparum</em>, lo que permite hablar de una coevolución entre huésped y parásito. En otro caso, la deleción CCR5-Δ32 impide la expresión funcional de uno de los correceptores utilizados por ciertas variantes del VIH-1 y confiere una resistencia elevada a los individuos homocigotos. Sin embargo, no debe presentarse como una adaptación producida por la epidemia de VIH: el alelo es miles de años anterior. Estos ejemplos muestran que una tecnología sólo podría convertirse en un factor evolutivo si, como las enfermedades infecciosas, modifica de manera sostenida la supervivencia o la reproducción.</p>
-        </blockquote>
-        <div class="copy-row"><button type="button" data-copy="text-adaptaciones">Copiar este párrafo</button></div>
-        <p class="note"><strong>Matiz importante:</strong> resistencia al VIH no significa que CCR5-Δ32 haya evolucionado como respuesta al VIH.</p>
+    <section class="chapter" id="mapa">
+      <div class="chapter-head">
+        <p class="section-label">Qué sabemos realmente</p>
+        <div>
+          <h2>Mapa de evidencia</h2>
+          <p class="chapter-intro">Separar evolución cultural, selección biológica e intervención genética evita que una hipótesis sugerente se presente como un hecho consumado.</p>
+          <div class="status-key" aria-label="Clave de niveles de evidencia">
+            <span class="status established">Establecido</span>
+            <span class="status study">En estudio</span>
+            <span class="status speculative">Especulativo</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="evidence-table">
+          <thead>
+            <tr><th>Ruta</th><th>Estado</th><th>Qué observamos</th><th>Qué faltaría para hablar de evolución biológica</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Ruta">Evolución cultural</td>
+              <td data-label="Estado"><span class="status established">Establecido</span></td>
+              <td data-label="Qué observamos">La IA altera cómo se genera, transmite y selecciona información; los recomendadores ya reorganizan el aprendizaje social.</td>
+              <td data-label="Para hablar de evolución biológica">No necesita un cambio genético para ser evolución cultural.</td>
+            </tr>
+            <tr>
+              <td data-label="Ruta">Construcción de nicho</td>
+              <td data-label="Estado"><span class="status established">Establecido</span></td>
+              <td data-label="Qué observamos">La tecnología modifica ambientes, instituciones y riesgos; eso puede intensificar o relajar presiones de selección.</td>
+              <td data-label="Para hablar de evolución biológica">Vincular un rasgo heredable con diferencias sostenidas de reproducción en ese nuevo ambiente.</td>
+            </tr>
+            <tr>
+              <td data-label="Ruta">Conducta, pareja y fecundidad</td>
+              <td data-label="Estado"><span class="status study">En estudio</span></td>
+              <td data-label="Qué observamos">Plataformas y algoritmos influyen en atención, relaciones y decisiones, pero los efectos demográficos son variables.</td>
+              <td data-label="Para hablar de evolución biológica">Medir heredabilidad, adecuación biológica y cambio acumulado durante varias generaciones.</td>
+            </tr>
+            <tr>
+              <td data-label="Ruta">Selección de embriones</td>
+              <td data-label="Estado"><span class="status study">En estudio</span></td>
+              <td data-label="Qué observamos">El diagnóstico preimplantacional es real; la selección por puntajes poligénicos complejos tiene utilidad predictiva limitada.</td>
+              <td data-label="Para hablar de evolución biológica">Uso amplio, resultados reproducibles y un efecto poblacional, no sólo decisiones clínicas aisladas.</td>
+            </tr>
+            <tr>
+              <td data-label="Ruta">Edición heredable</td>
+              <td data-label="Estado"><span class="status speculative">Especulativo</span></td>
+              <td data-label="Qué observamos">La IA puede ayudar a diseñar editores y guías, pero la edición clínica de la línea germinal humana no es una práctica aceptada.</td>
+              <td data-label="Para hablar de evolución biológica">Seguridad multigeneracional, gobernanza y legitimidad ética, además de heredabilidad efectiva.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
-    <section class="insert" id="proteinas">
-      <div class="insert-number" aria-hidden="true">3</div>
-      <div>
-        <h2>Mostrar conocimiento biológico nuevo</h2>
-        <p class="placement"><span>Dónde va:</span> después de “tecnología epistémica” y antes de “El descubrimiento antes de la comprensión”.</p>
-        <blockquote class="proposed-text speakable" id="text-proteinas">
-          <p>Un ejemplo reciente permite afirmar que la inteligencia artificial no sólo reorganiza conocimiento existente, sino que también ayuda a explorar posibilidades biológicas que no estaban previamente catalogadas. Merchant y colaboradores utilizaron el modelo genómico Evo para diseñar genes <em>de novo</em> y validaron experimentalmente proteínas anti-CRISPR y sistemas toxina-antitoxina funcionales, incluidas secuencias sin similitud significativa con proteínas naturales conocidas. Posteriormente, King y colaboradores emplearon Evo 1 y Evo 2 para proponer genomas completos de bacteriófagos: de 285 diseños sintetizados y evaluados en el laboratorio, 16 produjeron fagos viables capaces de infectar bacterias específicas. Esto no significa que la IA haya “creado vida” autónomamente. El modelo generó secuencias candidatas, mientras que su síntesis, validación e interpretación permanecieron bajo responsabilidad humana. El conocimiento nuevo surgió precisamente de esa interacción: la IA abrió un espacio de posibilidades y el experimento determinó cuáles tenían realidad biológica.</p>
-        </blockquote>
-        <div class="copy-row"><button type="button" data-copy="text-proteinas">Copiar este párrafo</button></div>
-        <p class="note"><strong>Fórmula recomendada:</strong> “la IA generó diseños genómicos que fueron sintetizados y validados experimentalmente”, no “la IA creó vida”.</p>
+    <section class="chapter" id="marco">
+      <div class="chapter-head">
+        <p class="section-label">01 · Marco evolutivo</p>
+        <div>
+          <h2>Brooks necesita compañía</h2>
+          <p class="chapter-intro">El documento dedica sus primeras páginas a Robert C. Brooks. Conviene conservarlo, pero situarlo dentro de la construcción de nicho, la coevolución gen-cultura y la cultura mediada por máquinas.</p>
+        </div>
       </div>
+      <p class="placement"><span>Dónde va:</span> después de la exposición de Brooks y antes del párrafo dedicado a Bruno Latour.</p>
+      <blockquote class="proposed-text audio-summary" id="texto-marco">
+        <p>Esta hipótesis puede situarse en una tradición más amplia de la teoría evolutiva. Richard Lewontin subrayó que los organismos no sólo se adaptan a un ambiente previamente dado, sino que también lo transforman. Kevin Laland, John Odling-Smee y Marcus Feldman desarrollaron esta relación mediante el concepto de construcción de nicho: al modificar el entorno, los organismos alteran las presiones de selección que actuarán sobre ellos, sobre otras especies y sobre sus descendientes.</p>
+        <p>En los seres humanos, la cultura amplifica extraordinariamente esta capacidad. Las prácticas de alimentación, las formas de asentamiento, la medicina y las tecnologías de comunicación pueden cambiar el ambiente selectivo antes de que exista una respuesta genética. La inteligencia artificial añade una capa nueva porque interviene en la variación, transmisión y selección de información cultural. Esto permite afirmar que ya participa en la evolución cultural. No permite afirmar, por sí solo, que haya cambiado la evolución genética humana.</p>
+      </blockquote>
+      <div class="copy-row"><button type="button" data-copy="texto-marco">Copiar este bloque</button></div>
+      <ul class="source-note">
+        <li><strong>Fundamento:</strong> Laland y Odling-Smee definen la construcción cultural de nicho como una modificación del ambiente que cambia presiones selectivas.</li>
+        <li><strong>Actualización:</strong> Brinkmann y colaboradores proponen “cultura de máquinas” para estudiar cómo recomendadores y chatbots alteran la transmisión cultural.</li>
+        <li><strong>Límite:</strong> Brooks formula predicciones plausibles; no presenta evidencia de una respuesta genética humana ya causada por la IA.</li>
+      </ul>
+    </section>
+
+    <section class="chapter" id="tecnologia">
+      <div class="chapter-head">
+        <p class="section-label">02 · Tecnología y evolución</p>
+        <div>
+          <h2>La tecnología ya ha cambiado la selección</h2>
+          <p class="chapter-intro audio-summary">La IA no sería el primer artefacto con efectos evolutivos. La diferencia está en la velocidad, el alcance y su capacidad de mediar decisiones cognitivas, sociales y reproductivas.</p>
+        </div>
+      </div>
+
+      <ol class="history-line">
+        <li>
+          <strong>Ganadería lechera</strong>
+          <p>La práctica cultural de ordeñar precedió a la expansión genética de la persistencia de lactasa. Un estudio de 2022 combinó residuos de grasa en alrededor de 7,000 fragmentos de cerámica de más de 550 sitios y ADN antiguo: la simple disponibilidad de leche no explica por sí sola la selección; las crisis de hambre y la exposición a patógenos pudieron intensificarla.</p>
+        </li>
+        <li>
+          <strong>Agricultura y malaria</strong>
+          <p>La modificación del paisaje, los asentamientos densos y ciertas prácticas agrícolas alteraron la exposición a mosquitos y parásitos. La cultura no “creó” el alelo HbS, pero pudo modificar el ambiente en el que su ventaja heterocigota se volvió relevante.</p>
+        </li>
+        <li>
+          <strong>Medicina moderna</strong>
+          <p>Vacunas, cirugía, reproducción asistida y tratamientos reducen algunas diferencias de supervivencia y generan otras. Es más preciso decir que cambian las presiones de selección que afirmar que “detienen” o “debilitan” universalmente la selección natural.</p>
+        </li>
+        <li>
+          <strong>Inteligencia artificial</strong>
+          <p>Diagnóstico, recomendación, vigilancia, educación y emparejamiento pueden reorganizar oportunidades y conductas. La consecuencia cultural es inmediata; la consecuencia genética sigue siendo una hipótesis que exige datos multigeneracionales.</p>
+        </li>
+      </ol>
+
+      <p class="precision"><strong>Frase segura:</strong> “La IA está transformando el ambiente cultural y sociotécnico; podría adquirir relevancia biológica si esos cambios producen diferencias heredables y persistentes en reproducción”.</p>
+    </section>
+
+    <section class="chapter" id="adaptaciones">
+      <div class="chapter-head">
+        <p class="section-label">03 · Adaptaciones concretas</p>
+        <div>
+          <h2>Cinco casos que explican el mecanismo</h2>
+          <p class="chapter-intro">Estos ejemplos muestran que adaptación no significa perfección. Una variante puede aportar una ventaja en un ambiente y un costo en otro; el efecto depende del contexto, del genotipo y de otras especies.</p>
+        </div>
+      </div>
+
+      <div class="case-ledger">
+        <article class="case">
+          <div class="case-number" aria-hidden="true">01</div>
+          <div>
+            <h3>HbS, malaria y anemia falciforme</h3>
+            <p><strong>La adaptación no es la enfermedad.</strong> Dos copias de HbS pueden causar enfermedad de células falciformes; una sola copia puede reducir fuertemente el riesgo de malaria grave. Es un caso clásico de selección balanceadora.</p>
+            <p>Band y colaboradores analizaron miles de casos de malaria grave en Gambia y Kenia y encontraron que la protección depende también del genotipo de <em>Plasmodium falciparum</em>. Es evidencia de una interacción evolutiva huésped-parásito, no una ventaja fija y universal.</p>
+          </div>
+          <div class="case-meta"><strong>Qué enseña</strong>El valor de una variante depende del ambiente y de otros genomas.<br><a href="https://doi.org/10.1038/s41586-021-04288-3" target="_blank" rel="noopener">Band et al., <em>Nature</em> (2022)</a></div>
+        </article>
+
+        <article class="case">
+          <div class="case-number" aria-hidden="true">02</div>
+          <div>
+            <h3>CCR5‑Δ32 y resistencia al VIH</h3>
+            <p>La deleción de 32 pares de bases produce un correceptor CCR5 no funcional. Los homocigotos muestran alta resistencia a cepas de VIH‑1 que usan CCR5; no es protección absoluta frente a todas las variantes virales. Los heterocigotos pueden tener protección parcial.</p>
+            <p>El ADN antiguo sitúa la deleción al menos 6,700 años antes del presente y detecta selección positiva entre aproximadamente 8,000 y 2,000 años atrás. Por tanto, el VIH no originó ni seleccionó inicialmente esta variante.</p>
+          </div>
+          <div class="case-meta"><strong>Qué enseña</strong>Una utilidad médica actual no revela necesariamente la presión histórica que produjo la variante.<br><a href="https://doi.org/10.1038/382722a0" target="_blank" rel="noopener">Samson et al., <em>Nature</em> (1996)</a><br><a href="https://doi.org/10.1016/j.cell.2025.04.015" target="_blank" rel="noopener">Ravn et al., <em>Cell</em> (2025)</a></div>
+        </article>
+
+        <article class="case">
+          <div class="case-number" aria-hidden="true">03</div>
+          <div>
+            <h3>EPAS1 y la vida en gran altitud</h3>
+            <p>Una variante del entorno de <em>EPAS1</em> asociada con la adaptación tibetana a la hipoxia llegó a humanos modernos mediante introgresión de un linaje denisovano o relacionado. Después fue favorecida en el altiplano.</p>
+            <p>El caso muestra que la adaptación puede reutilizar variación antigua adquirida por mezcla poblacional; no siempre depende de una mutación nueva.</p>
+          </div>
+          <div class="case-meta"><strong>Qué enseña</strong>La evolución trabaja con variación disponible, historia demográfica y ambiente.<br><a href="https://doi.org/10.1038/nature13408" target="_blank" rel="noopener">Huerta‑Sánchez et al., <em>Nature</em> (2014)</a></div>
+        </article>
+
+        <article class="case">
+          <div class="case-number" aria-hidden="true">04</div>
+          <div>
+            <h3>Persistencia de lactasa</h3>
+            <p>La capacidad de digerir lactosa en la edad adulta es uno de los ejemplos más fuertes de coevolución gen-cultura. La ganadería creó un nicho alimentario nuevo, pero la investigación reciente advierte que beber leche no basta para explicar la trayectoria genética.</p>
+            <p>Durante hambrunas o alta exposición a patógenos, la diarrea en personas sin persistencia de lactasa pudo tener consecuencias mucho más graves, intensificando la selección.</p>
+          </div>
+          <div class="case-meta"><strong>Qué enseña</strong>Una tecnología cultural puede crear la condición; la presión selectiva concreta puede depender de crisis y enfermedad.<br><a href="https://doi.org/10.1038/s41586-022-05010-7" target="_blank" rel="noopener">Evershed et al., <em>Nature</em> (2022)</a></div>
+        </article>
+
+        <article class="case">
+          <div class="case-number" aria-hidden="true">05</div>
+          <div>
+            <h3>Duffy nulo y <em>Plasmodium vivax</em></h3>
+            <p>La variante FY*O reduce la expresión eritrocitaria del receptor Duffy usado por <em>P. vivax</em> y está cerca de fijarse en varias poblaciones del África subsahariana. El análisis poblacional la identifica como una de las señales fuertes de selección humana.</p>
+            <p>Sin embargo, ya se documentan infecciones en personas Duffy negativas. La protección no es una muralla eterna: los parásitos también evolucionan y pueden usar rutas alternativas o etapas celulares distintas.</p>
+          </div>
+          <div class="case-meta"><strong>Qué enseña</strong>La adaptación es dinámica y puede generar una carrera coevolutiva.<br><a href="https://doi.org/10.1371/journal.pgen.1006560" target="_blank" rel="noopener">McManus et al., <em>PLoS Genetics</em> (2017)</a><br><a href="https://doi.org/10.1038/ncomms4346" target="_blank" rel="noopener">Liu et al., <em>Nature Communications</em> (2014)</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="chapter" id="proteinas">
+      <div class="chapter-head">
+        <p class="section-label">04 · Proteínas, genes y genomas</p>
+        <div>
+          <h2>Cuándo la IA produce conocimiento nuevo</h2>
+          <p class="chapter-intro audio-summary">La novedad no consiste en que una máquina tenga intención científica. Consiste en que genera una estructura o secuencia no catalogada, el laboratorio la construye y el experimento revela una función que antes no se conocía.</p>
+        </div>
+      </div>
+
+      <ol class="knowledge-chain">
+        <li>
+          <h3>Predecir</h3>
+          <p><a href="https://doi.org/10.1038/s41586-021-03819-2" target="_blank" rel="noopener">AlphaFold</a> predice la estructura tridimensional a partir de una secuencia. Amplía el acceso a estructura, pero no demuestra por sí solo que una proteína nueva funcione.</p>
+        </li>
+        <li>
+          <h3>Diseñar estructura y función</h3>
+          <p><a href="https://doi.org/10.1038/s41586-023-06415-8" target="_blank" rel="noopener">RFdiffusion</a> genera esqueletos proteicos nuevos desde especificaciones moleculares. El equipo caracterizó experimentalmente cientos de diseños y confirmó algunos mediante criomicroscopía.</p>
+        </li>
+        <li>
+          <h3>Generar genes funcionales</h3>
+          <p><a href="https://doi.org/10.1038/s41586-025-09749-7" target="_blank" rel="noopener">Evo</a> produjo genes <em>de novo</em> para sistemas toxina-antitoxina y proteínas anti-CRISPR, incluidas secuencias con poca similitud clara con proteínas conocidas. Las funciones se probaron en bacterias.</p>
+        </li>
+        <li>
+          <h3>Diseñar genomas completos</h3>
+          <p>King y colaboradores generaron genomas de bacteriófagos parecidos a ΦX174. Se pudieron ensamblar y probar 285 diseños; 16 produjeron fagos viables capaces de infectar bacterias. Es diseño generativo con validación experimental, no creación autónoma de vida.</p>
+        </li>
+      </ol>
+
+      <div class="fresh-paper audio-summary">
+        <p><strong>Actualización del 6 de agosto de 2026:</strong> el trabajo de los fagos ya se publicó en <em>Science</em>, volumen 393, como <a href="https://doi.org/10.1126/science.aec2657" target="_blank" rel="noopener">“Generative design of bacteriophages with genome language models”</a>. Éste es el artículo científico detrás del recorte “Ahora la inteligencia artificial escribe la vida”.</p>
+      </div>
+
+      <p class="precision"><strong>Frase segura:</strong> “La IA generó diseños biológicos novedosos; la síntesis y la validación experimental determinaron cuáles tenían función”. Evitar: “la IA creó vida por sí sola”.</p>
+    </section>
+
+    <section class="copy-section" id="texto-listo">
+      <div class="chapter-head">
+        <p class="section-label">05 · Redacción integrable</p>
+        <div>
+          <h2>Texto ampliado listo para el documento</h2>
+          <p class="chapter-intro">Este bloque reúne el argumento evolutivo, los ejemplos solicitados por Eva y el caso de conocimiento biológico nuevo.</p>
+        </div>
+      </div>
+
+      <p class="placement"><span>Dónde va:</span> los tres primeros párrafos después del análisis de Brooks; los dos últimos después de “tecnología epistémica” y antes de “El descubrimiento antes de la comprensión”.</p>
+      <blockquote class="proposed-text" id="texto-integral">
+        <p>La posible influencia de la inteligencia artificial sobre la evolución humana puede situarse dentro de la teoría de la construcción de nicho. Los organismos no sólo se adaptan a un ambiente previamente dado: también lo transforman y, al hacerlo, modifican las presiones de selección. En los seres humanos, la cultura y la tecnología amplifican esta capacidad. La ganadería, la agricultura, la urbanización y la medicina han alterado dietas, exposición a patógenos y posibilidades de supervivencia y reproducción. La inteligencia artificial se incorpora a esta historia como parte de un nuevo nicho sociotécnico que interviene en el trabajo, el aprendizaje, la atención, la salud, la elección de pareja y el acceso a oportunidades.</p>
+        <p>Conviene distinguir, sin embargo, entre evolución cultural y evolución biológica. Los sistemas de recomendación y los modelos generativos ya transforman los mecanismos mediante los cuales se produce, transmite y selecciona información. En ese sentido participan en la evolución cultural. Para demostrar una consecuencia biológica sería necesario identificar diferencias heredables asociadas con supervivencia o éxito reproductivo, y observar una respuesta acumulada durante varias generaciones. Hasta ahora no existe evidencia de una respuesta genética humana atribuible a la inteligencia artificial. Las predicciones sobre cambios en atención, cognición, personalidad o apareamiento deben presentarse como hipótesis.</p>
+        <p>La historia evolutiva ofrece ejemplos del tipo de evidencia que sería necesario. El alelo HbS muestra una ventaja heterocigota frente a la malaria grave, aunque dos copias pueden causar enfermedad de células falciformes; investigaciones recientes indican que la protección depende también del genotipo de <em>Plasmodium falciparum</em>. La deleción CCR5‑Δ32 produce alta resistencia a cepas de VIH‑1 que utilizan ese correceptor, pero no evolucionó como respuesta al VIH: el ADN antiguo sitúa su origen al menos 6,700 años atrás. La adaptación tibetana a la altitud involucra una variante de <em>EPAS1</em> procedente de un linaje denisovano, mientras que la persistencia de lactasa ilustra cómo una práctica cultural puede modificar la selección genética. En todos estos casos, el efecto depende de la interacción entre variante, ambiente, historia poblacional y, con frecuencia, otros organismos.</p>
+        <p>La vía más directa por la que la inteligencia artificial podría influir en frecuencias genéticas es su integración con tecnologías reproductivas. El diagnóstico preimplantacional ya permite evitar algunas enfermedades monogénicas, pero la selección de embriones mediante puntajes poligénicos tiene una capacidad predictiva limitada, especialmente entre embriones de una misma familia y entre poblaciones insuficientemente representadas en los datos. Una eventual edición de la línea germinal tendría consecuencias heredables más directas, pero plantea problemas de seguridad multigeneracional, desigualdad y gobernanza. Por ello, posibilidad técnica no equivale a efecto evolutivo demostrado ni a legitimidad ética.</p>
+        <p>La inteligencia artificial también interviene en la generación de conocimiento biológico nuevo. AlphaFold amplió la predicción de estructuras; RFdiffusion generó nuevos esqueletos proteicos y permitió diseñar proteínas con funciones específicas; el modelo genómico Evo produjo genes <em>de novo</em> con actividad anti-CRISPR y toxina-antitoxina que fueron verificados en bacterias. En un paso posterior, modelos Evo 1 y Evo 2 generaron genomas de bacteriófagos: de 285 diseños ensamblados y probados, 16 produjeron fagos viables. Estos resultados no significan que la IA haya creado vida autónomamente. El conocimiento nuevo surgió de un sistema híbrido: el modelo propuso secuencias, los investigadores seleccionaron y sintetizaron candidatos, y el experimento determinó cuáles tenían realidad biológica.</p>
+      </blockquote>
+      <div class="copy-row"><button type="button" data-copy="texto-integral">Copiar los cinco párrafos</button></div>
     </section>
 
     <section class="edits" id="correcciones">
       <p class="section-label">Antes de circularlo</p>
       <div>
         <h2>Correcciones indispensables</h2>
-        <ul class="edit-list speakable">
+        <ul class="edit-list">
           <li><span class="wrong">Russel C. Brooks</span><span class="arrow">→</span><span class="right">Robert C. Brooks</span></li>
+          <li><span class="wrong">la selección natural se debilita</span><span class="arrow">→</span><span class="right">algunas presiones se relajan y otras cambian</span></li>
+          <li><span class="wrong">la anemia falciforme es adaptativa</span><span class="arrow">→</span><span class="right">el rasgo HbAS puede ser ventajoso frente a malaria grave</span></li>
+          <li><span class="wrong">CCR5‑Δ32 evolucionó contra el VIH</span><span class="arrow">→</span><span class="right">CCR5‑Δ32 es anterior al VIH por milenios</span></li>
+          <li><span class="wrong">la IA creó vida</span><span class="arrow">→</span><span class="right">la IA generó diseños que fueron sintetizados y validados</span></li>
           <li><span class="wrong">las relaciones mutualistas las en las que</span><span class="arrow">→</span><span class="right">las relaciones mutualistas en las que</span></li>
-          <li><span class="wrong">si no que</span><span class="arrow">→</span><span class="right">sino que</span></li>
-          <li><span class="wrong">la forma de conocer propoio</span><span class="arrow">→</span><span class="right">la forma de conocer propia</span></li>
+          <li><span class="wrong">si no que / propoio</span><span class="arrow">→</span><span class="right">sino que / propia</span></li>
         </ul>
-        <p class="note">También falta incorporar la referencia completa de Brooks y uniformar “inteligencia artificial” en minúsculas, salvo al comienzo de oración.</p>
       </div>
     </section>
 
-    <details id="referencias">
-      <summary>Artículos y referencias concretas</summary>
-      <ol class="references">
-        <li>Brooks, R. C. (2024). <a href="https://doi.org/10.1086/733290">How might artificial intelligence influence human evolution?</a> <em>The Quarterly Review of Biology, 99</em>(4), 201–229.</li>
-        <li>Laland, K. N., Odling-Smee, J., &amp; Feldman, M. W. (2000). <a href="https://doi.org/10.1017/S0140525X00002417">Niche construction, biological evolution, and cultural change.</a> <em>Behavioral and Brain Sciences, 23</em>(1), 131–175.</li>
-        <li>Band, G., et al. (2022). <a href="https://doi.org/10.1038/s41586-021-04288-3">Malaria protection due to sickle haemoglobin depends on parasite genotype.</a> <em>Nature, 602</em>, 106–111.</li>
-        <li>Samson, M., et al. (1996). <a href="https://doi.org/10.1038/382722a0">Resistance to HIV-1 infection in Caucasian individuals bearing mutant alleles of the CCR-5 chemokine receptor gene.</a> <em>Nature, 382</em>, 722–725.</li>
-        <li>Ravn, K., et al. (2025). <a href="https://doi.org/10.1016/j.cell.2025.04.015">Tracing the evolutionary history of the CCR5delta32 deletion via ancient and modern genomes.</a> <em>Cell, 188</em>, 3679–3695.e16.</li>
-        <li>Merchant, A. T., King, S. H., Nguyen, E., &amp; Hie, B. L. (2026). <a href="https://doi.org/10.1038/s41586-025-09749-7">Semantic design of functional de novo genes from a genomic language model.</a> <em>Nature, 649</em>, 749–758.</li>
-        <li>King, S. H., et al. (2026). <a href="https://doi.org/10.1126/science.aec2657">Generative design of bacteriophages with genome language models.</a> <em>Science, 393</em>, eaec2657.</li>
-      </ol>
+    <details id="referencias" open>
+      <summary>Artículos científicos concretos</summary>
+
+      <div class="reference-group">
+        <h3>IA y evolución</h3>
+        <ol class="references">
+          <li>Brooks, R. C. (2024). <a href="https://doi.org/10.1086/733290" target="_blank" rel="noopener">How Might Artificial Intelligence Influence Human Evolution?</a> <em>The Quarterly Review of Biology, 99</em>(4), 201–229.<small>Artículo central del documento; formula mecanismos y predicciones, no una respuesta genética ya observada.</small></li>
+          <li>Laland, K. N., Odling-Smee, J., &amp; Feldman, M. W. (2001). <a href="https://doi.org/10.1046/j.1420-9101.2001.00262.x" target="_blank" rel="noopener">Cultural niche construction and human evolution.</a> <em>Journal of Evolutionary Biology, 14</em>, 22–33.<small>Base teórica para explicar cómo cultura y tecnología modifican ambientes selectivos.</small></li>
+          <li>Laland, K. N., Odling-Smee, J., &amp; Myles, S. (2010). <a href="https://doi.org/10.1038/nrg2734" target="_blank" rel="noopener">How culture shaped the human genome.</a> <em>Nature Reviews Genetics, 11</em>, 137–148.<small>Síntesis de evidencia sobre coevolución gen-cultura.</small></li>
+          <li>Brinkmann, L., et al. (2023). <a href="https://doi.org/10.1038/s41562-023-01742-2" target="_blank" rel="noopener">Machine culture.</a> <em>Nature Human Behaviour, 7</em>, 1855–1868.<small>Marco para variación, transmisión y selección cultural mediadas por máquinas.</small></li>
+          <li>Sanjak, J. S., et al. (2018). <a href="https://doi.org/10.1073/pnas.1707227114" target="_blank" rel="noopener">Evidence of directional and stabilizing selection in contemporary humans.</a> <em>PNAS, 115</em>(1), 151–156.<small>Muestra cómo se estudia selección actual mediante rasgos, genética y éxito reproductivo.</small></li>
+          <li>Karavani, E., et al. (2019). <a href="https://doi.org/10.1016/j.cell.2019.10.033" target="_blank" rel="noopener">Screening human embryos for polygenic traits has limited utility.</a> <em>Cell, 179</em>, 1424–1435.e8.<small>Cuantifica límites predictivos de la selección embrionaria poligénica.</small></li>
+        </ol>
+      </div>
+
+      <div class="reference-group">
+        <h3>Adaptaciones humanas</h3>
+        <ol class="references">
+          <li>Band, G., et al. (2022). <a href="https://doi.org/10.1038/s41586-021-04288-3" target="_blank" rel="noopener">Malaria protection due to sickle haemoglobin depends on parasite genotype.</a> <em>Nature, 602</em>, 106–111.</li>
+          <li>Samson, M., et al. (1996). <a href="https://doi.org/10.1038/382722a0" target="_blank" rel="noopener">Resistance to HIV‑1 infection in individuals bearing mutant CCR5 alleles.</a> <em>Nature, 382</em>, 722–725.</li>
+          <li>Ravn, K., et al. (2025). <a href="https://doi.org/10.1016/j.cell.2025.04.015" target="_blank" rel="noopener">Tracing the evolutionary history of the CCR5delta32 deletion via ancient and modern genomes.</a> <em>Cell, 188</em>, 3679–3695.e16.</li>
+          <li>Huerta-Sánchez, E., et al. (2014). <a href="https://doi.org/10.1038/nature13408" target="_blank" rel="noopener">Altitude adaptation in Tibetans caused by introgression of Denisovan-like DNA.</a> <em>Nature, 512</em>, 194–197.</li>
+          <li>Evershed, R. P., et al. (2022). <a href="https://doi.org/10.1038/s41586-022-05010-7" target="_blank" rel="noopener">Dairying, diseases and the evolution of lactase persistence in Europe.</a> <em>Nature, 608</em>, 336–345.</li>
+          <li>McManus, K. F., et al. (2017). <a href="https://doi.org/10.1371/journal.pgen.1006560" target="_blank" rel="noopener">Population genetic analysis of the DARC locus reveals adaptation associated with malaria resistance.</a> <em>PLoS Genetics, 13</em>, e1006560.</li>
+        </ol>
+      </div>
+
+      <div class="reference-group">
+        <h3>IA y biología nueva</h3>
+        <ol class="references">
+          <li>Jumper, J., et al. (2021). <a href="https://doi.org/10.1038/s41586-021-03819-2" target="_blank" rel="noopener">Highly accurate protein structure prediction with AlphaFold.</a> <em>Nature, 596</em>, 583–589.</li>
+          <li>Watson, J. L., et al. (2023). <a href="https://doi.org/10.1038/s41586-023-06415-8" target="_blank" rel="noopener">De novo design of protein structure and function with RFdiffusion.</a> <em>Nature, 620</em>, 1089–1100.</li>
+          <li>Madani, A., et al. (2023). <a href="https://doi.org/10.1038/s41587-022-01618-2" target="_blank" rel="noopener">Large language models generate functional protein sequences across diverse families.</a> <em>Nature Biotechnology, 41</em>, 1099–1106.</li>
+          <li>Merchant, A. T., King, S. H., Nguyen, E., et al. (2026). <a href="https://doi.org/10.1038/s41586-025-09749-7" target="_blank" rel="noopener">Semantic design of functional de novo genes from a genomic language model.</a> <em>Nature, 649</em>, 749–758.</li>
+          <li>King, S. H., et al. (2026). <a href="https://doi.org/10.1126/science.aec2657" target="_blank" rel="noopener">Generative design of bacteriophages with genome language models.</a> <em>Science, 393</em>(6811), eaec2657.<small>Publicado el 6 de agosto de 2026; artículo científico del recorte periodístico.</small></li>
+        </ol>
+      </div>
     </details>
   </main>
 
   <footer>
-    Página preparada para revisión móvil. Los párrafos en fondo oscuro claro están listos para copiar; las referencias enlazan al DOI de cada publicación.
+    Investigación actualizada el 8 de agosto de 2026. Se distinguieron resultados experimentales, inferencias evolutivas e hipótesis. Los bloques en fondo gris están listos para copiar al documento.
   </footer>
 
   <div id="toast" role="status" aria-live="polite">Texto copiado</div>
@@ -502,15 +1037,15 @@
       toast.textContent = message;
       toast.classList.add('show');
       clearTimeout(toastTimer);
-      toastTimer = setTimeout(() => toast.classList.remove('show'), 2200);
+      toastTimer = setTimeout(function () { toast.classList.remove('show'); }, 2200);
     }
 
-    document.querySelectorAll('[data-copy]').forEach(button => {
-      button.addEventListener('click', async () => {
+    document.querySelectorAll('[data-copy]').forEach(function (button) {
+      button.addEventListener('click', async function () {
         const target = document.getElementById(button.dataset.copy);
         try {
           await navigator.clipboard.writeText(target.innerText.trim());
-          showToast('Párrafo copiado');
+          showToast('Texto copiado');
         } catch (error) {
           const selection = window.getSelection();
           const range = document.createRange();
@@ -523,7 +1058,7 @@
     });
 
     const textBtn = document.getElementById('textBtn');
-    textBtn.addEventListener('click', () => {
+    textBtn.addEventListener('click', function () {
       const isLarge = document.body.classList.toggle('large-text');
       textBtn.setAttribute('aria-pressed', String(isLarge));
       textBtn.textContent = isLarge ? 'Tamaño normal' : 'Texto más grande';
@@ -531,16 +1066,15 @@
 
     const listenBtn = document.getElementById('listenBtn');
     const stopBtn = document.getElementById('stopBtn');
-    let speaking = false;
 
     function spokenText() {
-      return Array.from(document.querySelectorAll('.speakable'))
-        .map(node => node.innerText.trim())
+      return Array.from(document.querySelectorAll('.audio-summary'))
+        .map(function (node) { return node.innerText.trim(); })
         .filter(Boolean)
         .join('. ');
     }
 
-    listenBtn.addEventListener('click', () => {
+    listenBtn.addEventListener('click', function () {
       if (!('speechSynthesis' in window)) {
         showToast('Este navegador no admite lectura en voz alta');
         return;
@@ -563,21 +1097,14 @@
       utterance.lang = 'es-MX';
       utterance.rate = 0.96;
       utterance.pitch = 1;
-      utterance.onstart = () => {
-        speaking = true;
-        listenBtn.textContent = 'Pausar audio';
-      };
-      utterance.onend = utterance.onerror = () => {
-        speaking = false;
-        listenBtn.textContent = 'Escuchar el resumen';
-      };
+      utterance.onstart = function () { listenBtn.textContent = 'Pausar audio'; };
+      utterance.onend = utterance.onerror = function () { listenBtn.textContent = 'Escuchar síntesis'; };
       speechSynthesis.speak(utterance);
     });
 
-    stopBtn.addEventListener('click', () => {
+    stopBtn.addEventListener('click', function () {
       if ('speechSynthesis' in window) speechSynthesis.cancel();
-      speaking = false;
-      listenBtn.textContent = 'Escuchar el resumen';
+      listenBtn.textContent = 'Escuchar síntesis';
     });
   </script>
 </body>
