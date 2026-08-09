@@ -544,27 +544,55 @@
     .arrow { color: var(--accent); text-align: center; }
     .right { font-weight: 700; }
 
-    details {
-      padding: 25px 0 30px;
+    .sources-section {
+      padding: 76px 0 58px;
       border-block: 2px solid var(--ink);
     }
 
-    summary {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      min-height: 52px;
-      cursor: pointer;
-      color: var(--ink);
-      font-size: 17px;
-      font-weight: 800;
-      letter-spacing: .02em;
-      list-style: none;
+    .sources-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(180px, .28fr);
+      gap: clamp(28px, 7vw, 90px);
+      align-items: end;
+      padding-bottom: 38px;
     }
 
-    summary::-webkit-details-marker { display: none; }
-    summary::after { color: var(--accent); font-size: 25px; content: "+"; }
-    details[open] summary::after { content: "−"; }
+    .sources-head h2 {
+      max-width: 760px;
+      margin: 8px 0 16px;
+      font-size: clamp(2.4rem, 6.3vw, 5.8rem);
+      font-weight: 500;
+      line-height: .92;
+      letter-spacing: -.055em;
+    }
+
+    .sources-intro { max-width: 670px; margin: 0; color: var(--muted); }
+
+    .source-count {
+      padding-top: 15px;
+      border-top: 1px solid var(--ink);
+      color: var(--muted);
+      font: 750 12px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .source-count strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--accent);
+      font: 500 clamp(3.3rem, 7vw, 5.8rem)/.9 Georgia, "Times New Roman", serif;
+      letter-spacing: -.05em;
+    }
+
+    .sources-tools {
+      display: flex;
+      justify-content: flex-end;
+      padding: 12px 0 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .sources-tools button { min-height: 44px; padding-inline: 15px; font-size: 12px; }
 
     .reference-group {
       display: grid;
@@ -588,6 +616,16 @@
     }
 
     .references li { margin-bottom: 17px; padding-left: 7px; }
+
+    .source-link {
+      display: block;
+      width: fit-content;
+      max-width: 100%;
+      margin-top: 6px;
+      color: var(--accent-dark);
+      font: 720 12px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+      overflow-wrap: anywhere;
+    }
 
     .references small {
       display: block;
@@ -643,6 +681,10 @@
       .knowledge-chain li::before { grid-row: 1 / span 2; font-size: 2.25rem; }
       .knowledge-chain p { grid-column: 2; }
       .history-line li { grid-template-columns: 1fr; gap: 5px; }
+      .sources-section { padding-block: 58px 48px; }
+      .sources-head { grid-template-columns: 1fr; gap: 24px; padding-bottom: 30px; }
+      .source-count { display: grid; grid-template-columns: 70px 1fr; gap: 14px; align-items: end; }
+      .source-count strong { margin: 0; font-size: 3.7rem; }
       .reference-group { grid-template-columns: 1fr; gap: 12px; }
       .edit-list li { grid-template-columns: 1fr; gap: 2px; }
       .arrow { width: 18px; text-align: left; transform: rotate(90deg); }
@@ -983,44 +1025,76 @@
       </div>
     </section>
 
-    <details id="referencias" open>
-      <summary>Artículos científicos concretos</summary>
-
-      <div class="reference-group">
-        <h3>IA y evolución</h3>
-        <ol class="references">
-          <li>Brooks, R. C. (2024). <a href="https://doi.org/10.1086/733290" target="_blank" rel="noopener">How Might Artificial Intelligence Influence Human Evolution?</a> <em>The Quarterly Review of Biology, 99</em>(4), 201–229.<small>Artículo central del documento; formula mecanismos y predicciones, no una respuesta genética ya observada.</small></li>
-          <li>Laland, K. N., Odling-Smee, J., &amp; Feldman, M. W. (2001). <a href="https://doi.org/10.1046/j.1420-9101.2001.00262.x" target="_blank" rel="noopener">Cultural niche construction and human evolution.</a> <em>Journal of Evolutionary Biology, 14</em>, 22–33.<small>Base teórica para explicar cómo cultura y tecnología modifican ambientes selectivos.</small></li>
-          <li>Laland, K. N., Odling-Smee, J., &amp; Myles, S. (2010). <a href="https://doi.org/10.1038/nrg2734" target="_blank" rel="noopener">How culture shaped the human genome.</a> <em>Nature Reviews Genetics, 11</em>, 137–148.<small>Síntesis de evidencia sobre coevolución gen-cultura.</small></li>
-          <li>Brinkmann, L., et al. (2023). <a href="https://doi.org/10.1038/s41562-023-01742-2" target="_blank" rel="noopener">Machine culture.</a> <em>Nature Human Behaviour, 7</em>, 1855–1868.<small>Marco para variación, transmisión y selección cultural mediadas por máquinas.</small></li>
-          <li>Sanjak, J. S., et al. (2018). <a href="https://doi.org/10.1073/pnas.1707227114" target="_blank" rel="noopener">Evidence of directional and stabilizing selection in contemporary humans.</a> <em>PNAS, 115</em>(1), 151–156.<small>Muestra cómo se estudia selección actual mediante rasgos, genética y éxito reproductivo.</small></li>
-          <li>Karavani, E., et al. (2019). <a href="https://doi.org/10.1016/j.cell.2019.10.033" target="_blank" rel="noopener">Screening human embryos for polygenic traits has limited utility.</a> <em>Cell, 179</em>, 1424–1435.e8.<small>Cuantifica límites predictivos de la selección embrionaria poligénica.</small></li>
-        </ol>
+    <section class="sources-section" id="referencias">
+      <div class="sources-head">
+        <div>
+          <p class="section-label">Bibliografía verificable</p>
+          <h2>Todas las fuentes,<br>con enlace directo</h2>
+          <p class="sources-intro">La lista reúne los artículos que respaldan la ampliación sobre evolución, adaptaciones e IA, además de la bibliografía académica del documento original. Cada referencia incluye un enlace DOI o editorial escrito de forma visible y una nota breve sobre su función.</p>
+        </div>
+        <div class="source-count"><strong>32</strong><span>fuentes académicas y editoriales enlazadas</span></div>
       </div>
 
-      <div class="reference-group">
-        <h3>Adaptaciones humanas</h3>
-        <ol class="references">
-          <li>Band, G., et al. (2022). <a href="https://doi.org/10.1038/s41586-021-04288-3" target="_blank" rel="noopener">Malaria protection due to sickle haemoglobin depends on parasite genotype.</a> <em>Nature, 602</em>, 106–111.</li>
-          <li>Samson, M., et al. (1996). <a href="https://doi.org/10.1038/382722a0" target="_blank" rel="noopener">Resistance to HIV‑1 infection in individuals bearing mutant CCR5 alleles.</a> <em>Nature, 382</em>, 722–725.</li>
-          <li>Ravn, K., et al. (2025). <a href="https://doi.org/10.1016/j.cell.2025.04.015" target="_blank" rel="noopener">Tracing the evolutionary history of the CCR5delta32 deletion via ancient and modern genomes.</a> <em>Cell, 188</em>, 3679–3695.e16.</li>
-          <li>Huerta-Sánchez, E., et al. (2014). <a href="https://doi.org/10.1038/nature13408" target="_blank" rel="noopener">Altitude adaptation in Tibetans caused by introgression of Denisovan-like DNA.</a> <em>Nature, 512</em>, 194–197.</li>
-          <li>Evershed, R. P., et al. (2022). <a href="https://doi.org/10.1038/s41586-022-05010-7" target="_blank" rel="noopener">Dairying, diseases and the evolution of lactase persistence in Europe.</a> <em>Nature, 608</em>, 336–345.</li>
-          <li>McManus, K. F., et al. (2017). <a href="https://doi.org/10.1371/journal.pgen.1006560" target="_blank" rel="noopener">Population genetic analysis of the DARC locus reveals adaptation associated with malaria resistance.</a> <em>PLoS Genetics, 13</em>, e1006560.</li>
-        </ol>
-      </div>
+      <div class="sources-tools"><button type="button" data-copy="fuentes-completas">Copiar todas las fuentes</button></div>
 
-      <div class="reference-group">
-        <h3>IA y biología nueva</h3>
-        <ol class="references">
-          <li>Jumper, J., et al. (2021). <a href="https://doi.org/10.1038/s41586-021-03819-2" target="_blank" rel="noopener">Highly accurate protein structure prediction with AlphaFold.</a> <em>Nature, 596</em>, 583–589.</li>
-          <li>Watson, J. L., et al. (2023). <a href="https://doi.org/10.1038/s41586-023-06415-8" target="_blank" rel="noopener">De novo design of protein structure and function with RFdiffusion.</a> <em>Nature, 620</em>, 1089–1100.</li>
-          <li>Madani, A., et al. (2023). <a href="https://doi.org/10.1038/s41587-022-01618-2" target="_blank" rel="noopener">Large language models generate functional protein sequences across diverse families.</a> <em>Nature Biotechnology, 41</em>, 1099–1106.</li>
-          <li>Merchant, A. T., King, S. H., Nguyen, E., et al. (2026). <a href="https://doi.org/10.1038/s41586-025-09749-7" target="_blank" rel="noopener">Semantic design of functional de novo genes from a genomic language model.</a> <em>Nature, 649</em>, 749–758.</li>
-          <li>King, S. H., et al. (2026). <a href="https://doi.org/10.1126/science.aec2657" target="_blank" rel="noopener">Generative design of bacteriophages with genome language models.</a> <em>Science, 393</em>(6811), eaec2657.<small>Publicado el 6 de agosto de 2026; artículo científico del recorte periodístico.</small></li>
-        </ol>
+      <div id="fuentes-completas">
+        <div class="reference-group">
+          <h3>IA, tecnología y evolución</h3>
+          <ol class="references">
+            <li>Brooks, R. C. (2024). <a href="https://doi.org/10.1086/733290" target="_blank" rel="noopener">How Might Artificial Intelligence Influence Human Evolution?</a> <em>The Quarterly Review of Biology, 99</em>(4), 201–229.<a class="source-link" href="https://doi.org/10.1086/733290" target="_blank" rel="noopener">https://doi.org/10.1086/733290 ↗</a><small>Artículo central: propone mecanismos y predicciones sobre IA y evolución humana; no afirma que ya exista una respuesta genética.</small></li>
+            <li>Laland, K. N., Odling-Smee, J., &amp; Feldman, M. W. (2001). <a href="https://doi.org/10.1046/j.1420-9101.2001.00262.x" target="_blank" rel="noopener">Cultural niche construction and human evolution.</a> <em>Journal of Evolutionary Biology, 14</em>, 22–33.<a class="source-link" href="https://doi.org/10.1046/j.1420-9101.2001.00262.x" target="_blank" rel="noopener">https://doi.org/10.1046/j.1420-9101.2001.00262.x ↗</a><small>Base teórica para explicar cómo cultura y tecnología transforman el ambiente selectivo.</small></li>
+            <li>Laland, K. N., Odling-Smee, J., &amp; Myles, S. (2010). <a href="https://doi.org/10.1038/nrg2734" target="_blank" rel="noopener">How culture shaped the human genome.</a> <em>Nature Reviews Genetics, 11</em>, 137–148.<a class="source-link" href="https://doi.org/10.1038/nrg2734" target="_blank" rel="noopener">https://doi.org/10.1038/nrg2734 ↗</a><small>Síntesis de evidencia sobre coevolución entre genes y cultura.</small></li>
+            <li>Brinkmann, L., et al. (2023). <a href="https://doi.org/10.1038/s41562-023-01742-2" target="_blank" rel="noopener">Machine culture.</a> <em>Nature Human Behaviour, 7</em>, 1855–1868.<a class="source-link" href="https://doi.org/10.1038/s41562-023-01742-2" target="_blank" rel="noopener">https://doi.org/10.1038/s41562-023-01742-2 ↗</a><small>Marco para estudiar variación, transmisión y selección cultural mediadas por máquinas.</small></li>
+            <li>Sanjak, J. S., et al. (2018). <a href="https://doi.org/10.1073/pnas.1707227114" target="_blank" rel="noopener">Evidence of directional and stabilizing selection in contemporary humans.</a> <em>PNAS, 115</em>(1), 151–156.<a class="source-link" href="https://doi.org/10.1073/pnas.1707227114" target="_blank" rel="noopener">https://doi.org/10.1073/pnas.1707227114 ↗</a><small>Muestra cómo se investiga selección contemporánea mediante rasgos, genética y éxito reproductivo.</small></li>
+            <li>Karavani, E., et al. (2019). <a href="https://doi.org/10.1016/j.cell.2019.10.033" target="_blank" rel="noopener">Screening human embryos for polygenic traits has limited utility.</a> <em>Cell, 179</em>, 1424–1435.e8.<a class="source-link" href="https://doi.org/10.1016/j.cell.2019.10.033" target="_blank" rel="noopener">https://doi.org/10.1016/j.cell.2019.10.033 ↗</a><small>Cuantifica los límites predictivos de la selección embrionaria poligénica.</small></li>
+          </ol>
+        </div>
+
+        <div class="reference-group">
+          <h3>Adaptaciones humanas concretas</h3>
+          <ol class="references" start="7">
+            <li>Band, G., et al. (2022). <a href="https://doi.org/10.1038/s41586-021-04288-3" target="_blank" rel="noopener">Malaria protection due to sickle haemoglobin depends on parasite genotype.</a> <em>Nature, 602</em>, 106–111.<a class="source-link" href="https://doi.org/10.1038/s41586-021-04288-3" target="_blank" rel="noopener">https://doi.org/10.1038/s41586-021-04288-3 ↗</a><small>Relaciona la hemoglobina falciforme con protección frente a malaria y muestra que el efecto depende también del parásito.</small></li>
+            <li>Samson, M., et al. (1996). <a href="https://doi.org/10.1038/382722a0" target="_blank" rel="noopener">Resistance to HIV‑1 infection in individuals bearing mutant CCR5 alleles.</a> <em>Nature, 382</em>, 722–725.<a class="source-link" href="https://doi.org/10.1038/382722a0" target="_blank" rel="noopener">https://doi.org/10.1038/382722a0 ↗</a><small>Estudio clásico que vincula CCR5‑Δ32 con resistencia a la infección por VIH‑1.</small></li>
+            <li>Ravn, K., et al. (2025). <a href="https://doi.org/10.1016/j.cell.2025.04.015" target="_blank" rel="noopener">Tracing the evolutionary history of the CCR5delta32 deletion via ancient and modern genomes.</a> <em>Cell, 188</em>, 3679–3695.e16.<a class="source-link" href="https://doi.org/10.1016/j.cell.2025.04.015" target="_blank" rel="noopener">https://doi.org/10.1016/j.cell.2025.04.015 ↗</a><small>Reconstruye la historia evolutiva de CCR5‑Δ32 con genomas antiguos y modernos.</small></li>
+            <li>Huerta-Sánchez, E., et al. (2014). <a href="https://doi.org/10.1038/nature13408" target="_blank" rel="noopener">Altitude adaptation in Tibetans caused by introgression of Denisovan-like DNA.</a> <em>Nature, 512</em>, 194–197.<a class="source-link" href="https://doi.org/10.1038/nature13408" target="_blank" rel="noopener">https://doi.org/10.1038/nature13408 ↗</a><small>Vincula la adaptación tibetana a la altura con una variante de EPAS1 de origen denisovano.</small></li>
+            <li>Evershed, R. P., et al. (2022). <a href="https://doi.org/10.1038/s41586-022-05010-7" target="_blank" rel="noopener">Dairying, diseases and the evolution of lactase persistence in Europe.</a> <em>Nature, 608</em>, 336–345.<a class="source-link" href="https://doi.org/10.1038/s41586-022-05010-7" target="_blank" rel="noopener">https://doi.org/10.1038/s41586-022-05010-7 ↗</a><small>Integra arqueología, consumo de leche y evolución de la persistencia de lactasa.</small></li>
+            <li>Liu, X., et al. (2014). <a href="https://doi.org/10.1038/ncomms4346" target="_blank" rel="noopener">The FADS1-FADS2 gene cluster confers risk to polyunsaturated fatty acid balance in inflammatory disease and is highly selected in human evolution.</a> <em>Nature Communications, 5</em>, 3346.<a class="source-link" href="https://doi.org/10.1038/ncomms4346" target="_blank" rel="noopener">https://doi.org/10.1038/ncomms4346 ↗</a><small>Respalda el ejemplo del locus FADS como adaptación relacionada con dieta y metabolismo de ácidos grasos.</small></li>
+            <li>McManus, K. F., et al. (2017). <a href="https://doi.org/10.1371/journal.pgen.1006560" target="_blank" rel="noopener">Population genetic analysis of the DARC locus reveals adaptation associated with malaria resistance.</a> <em>PLoS Genetics, 13</em>, e1006560.<a class="source-link" href="https://doi.org/10.1371/journal.pgen.1006560" target="_blank" rel="noopener">https://doi.org/10.1371/journal.pgen.1006560 ↗</a><small>Analiza el locus DARC/Duffy y su asociación evolutiva con resistencia a malaria.</small></li>
+          </ol>
+        </div>
+
+        <div class="reference-group">
+          <h3>IA, proteínas, genes y genomas</h3>
+          <ol class="references" start="14">
+            <li>Jumper, J., et al. (2021). <a href="https://doi.org/10.1038/s41586-021-03819-2" target="_blank" rel="noopener">Highly accurate protein structure prediction with AlphaFold.</a> <em>Nature, 596</em>, 583–589.<a class="source-link" href="https://doi.org/10.1038/s41586-021-03819-2" target="_blank" rel="noopener">https://doi.org/10.1038/s41586-021-03819-2 ↗</a><small>Referencia central para predicción de estructura de proteínas mediante IA.</small></li>
+            <li>Watson, J. L., et al. (2023). <a href="https://doi.org/10.1038/s41586-023-06415-8" target="_blank" rel="noopener">De novo design of protein structure and function with RFdiffusion.</a> <em>Nature, 620</em>, 1089–1100.<a class="source-link" href="https://doi.org/10.1038/s41586-023-06415-8" target="_blank" rel="noopener">https://doi.org/10.1038/s41586-023-06415-8 ↗</a><small>Demuestra diseño de novo de estructuras y funciones proteicas con un modelo generativo.</small></li>
+            <li>Madani, A., et al. (2023). <a href="https://doi.org/10.1038/s41587-022-01618-2" target="_blank" rel="noopener">Large language models generate functional protein sequences across diverse families.</a> <em>Nature Biotechnology, 41</em>, 1099–1106.<a class="source-link" href="https://doi.org/10.1038/s41587-022-01618-2" target="_blank" rel="noopener">https://doi.org/10.1038/s41587-022-01618-2 ↗</a><small>Muestra que modelos de lenguaje pueden generar secuencias proteicas funcionales.</small></li>
+            <li>Merchant, A. T., King, S. H., Nguyen, E., et al. (2026). <a href="https://doi.org/10.1038/s41586-025-09749-7" target="_blank" rel="noopener">Semantic design of functional de novo genes from a genomic language model.</a> <em>Nature, 649</em>, 749–758.<a class="source-link" href="https://doi.org/10.1038/s41586-025-09749-7" target="_blank" rel="noopener">https://doi.org/10.1038/s41586-025-09749-7 ↗</a><small>Respalda el diseño de genes funcionales de novo con un modelo de lenguaje genómico.</small></li>
+            <li>King, S. H., et al. (2026). <a href="https://doi.org/10.1126/science.aec2657" target="_blank" rel="noopener">Generative design of bacteriophages with genome language models.</a> <em>Science, 393</em>(6811), eaec2657.<a class="source-link" href="https://doi.org/10.1126/science.aec2657" target="_blank" rel="noopener">https://doi.org/10.1126/science.aec2657 ↗</a><small>Artículo científico del recorte periodístico, publicado el 6 de agosto de 2026; reporta diseño generativo y validación de bacteriófagos.</small></li>
+          </ol>
+        </div>
+
+        <div class="reference-group">
+          <h3>Bibliografía del documento original</h3>
+          <ol class="references" start="19">
+            <li>Alvarado, R. (2023). <a href="https://doi.org/10.1007/s11948-023-00451-3" target="_blank" rel="noopener">AI as an epistemic technology.</a> <em>Science and Engineering Ethics, 29</em>, 32.<a class="source-link" href="https://doi.org/10.1007/s11948-023-00451-3" target="_blank" rel="noopener">https://doi.org/10.1007/s11948-023-00451-3 ↗</a><small>Marco filosófico para entender la IA como tecnología que interviene en la producción de conocimiento.</small></li>
+            <li>Baldi, P., Sadowski, P., &amp; Whiteson, D. (2014). <a href="https://doi.org/10.1038/ncomms5308" target="_blank" rel="noopener">Searching for exotic particles in high-energy physics with deep learning.</a> <em>Nature Communications, 5</em>, 4308.<a class="source-link" href="https://doi.org/10.1038/ncomms5308" target="_blank" rel="noopener">https://doi.org/10.1038/ncomms5308 ↗</a><small>Ejemplo empírico del uso de aprendizaje profundo para detectar patrones en física de partículas.</small></li>
+            <li>Bau, D., Zhou, B., Khosla, A., Oliva, A., &amp; Torralba, A. (2017). <a href="https://doi.org/10.48550/arXiv.1704.05796" target="_blank" rel="noopener">Network dissection: Quantifying interpretability of deep visual representations.</a> <em>arXiv</em>.<a class="source-link" href="https://doi.org/10.48550/arXiv.1704.05796" target="_blank" rel="noopener">https://doi.org/10.48550/arXiv.1704.05796 ↗</a><small>Método para cuantificar la interpretabilidad de representaciones internas en redes visuales.</small></li>
+            <li>Bau, D., Zhu, J.-Y., Strobelt, H., Zhou, B., Tenenbaum, J. B., Freeman, W. T., &amp; Torralba, A. (2018). <a href="https://doi.org/10.48550/arXiv.1811.10597" target="_blank" rel="noopener">GAN dissection: Visualizing and understanding generative adversarial networks.</a> <em>arXiv</em>.<a class="source-link" href="https://doi.org/10.48550/arXiv.1811.10597" target="_blank" rel="noopener">https://doi.org/10.48550/arXiv.1811.10597 ↗</a><small>Extiende la disección de redes a modelos generativos para analizar unidades y conceptos.</small></li>
+            <li>Boge, F. J. (2024). <a href="https://doi.org/10.1007/s11229-023-04440-8" target="_blank" rel="noopener">Functional concept proxies and the actually smart Hans problem: What’s special about deep neural networks in science.</a> <em>Synthese, 203</em>, 16.<a class="source-link" href="https://doi.org/10.1007/s11229-023-04440-8" target="_blank" rel="noopener">https://doi.org/10.1007/s11229-023-04440-8 ↗</a><small>Discute qué significa atribuir conceptos y comprensión a redes profundas usadas en ciencia.</small></li>
+            <li>Boge, F. J., &amp; de Regt, H. W. (2026). <a href="https://doi.org/10.1007/978-3-032-03083-2_19" target="_blank" rel="noopener">Machine learning discoveries and scientific understanding in particle physics: Problems and prospects.</a> En <em>Philosophy of Science for Machine Learning</em>, 403–434.<a class="source-link" href="https://doi.org/10.1007/978-3-032-03083-2_19" target="_blank" rel="noopener">https://doi.org/10.1007/978-3-032-03083-2_19 ↗</a><small>Analiza la relación entre descubrimientos con aprendizaje automático y comprensión científica.</small></li>
+            <li>Buckner, C. (2018). <a href="https://doi.org/10.1007/s11229-018-01949-1" target="_blank" rel="noopener">Empiricism without magic: Transformational abstraction in deep convolutional neural networks.</a> <em>Synthese, 195</em>(12), 5339–5372.<a class="source-link" href="https://doi.org/10.1007/s11229-018-01949-1" target="_blank" rel="noopener">https://doi.org/10.1007/s11229-018-01949-1 ↗</a><small>Explica cómo pueden surgir abstracciones útiles en redes profundas sin atribuirles facultades mágicas.</small></li>
+            <li>Buckner, C. (2020). <a href="https://doi.org/10.1038/s42256-020-00266-y" target="_blank" rel="noopener">Understanding adversarial examples requires a theory of artefacts for deep learning.</a> <em>Nature Machine Intelligence, 2</em>, 731–736.<a class="source-link" href="https://doi.org/10.1038/s42256-020-00266-y" target="_blank" rel="noopener">https://doi.org/10.1038/s42256-020-00266-y ↗</a><small>Problematiza qué revelan los ejemplos adversariales sobre los artefactos aprendidos por una red.</small></li>
+            <li>Chang, S., Cohen, T., &amp; Ostdiek, B. (2018). <a href="https://doi.org/10.1103/PhysRevD.97.056009" target="_blank" rel="noopener">What is the machine learning?</a> <em>Physical Review D, 97</em>(5), 056009.<a class="source-link" href="https://doi.org/10.1103/PhysRevD.97.056009" target="_blank" rel="noopener">https://doi.org/10.1103/PhysRevD.97.056009 ↗</a><small>Investiga qué propiedades físicas aprende un clasificador y cómo volverlas interpretables.</small></li>
+            <li>Chen, B., Huang, K., Raghupathi, S., Chandratreya, I., Du, Q., &amp; Lipson, H. (2022). <a href="https://doi.org/10.1038/s43588-022-00281-6" target="_blank" rel="noopener">Automated discovery of fundamental variables hidden in experimental data.</a> <em>Nature Computational Science, 2</em>, 433–442.<a class="source-link" href="https://doi.org/10.1038/s43588-022-00281-6" target="_blank" rel="noopener">https://doi.org/10.1038/s43588-022-00281-6 ↗</a><small>Ejemplo de IA para descubrir variables fundamentales ocultas en datos experimentales.</small></li>
+            <li>Humphreys, P. (2009). <a href="https://doi.org/10.1007/s11229-008-9435-2" target="_blank" rel="noopener">The philosophical novelty of computer simulation methods.</a> <em>Synthese, 169</em>(3), 615–626.<a class="source-link" href="https://doi.org/10.1007/s11229-008-9435-2" target="_blank" rel="noopener">https://doi.org/10.1007/s11229-008-9435-2 ↗</a><small>Examina la novedad epistemológica de métodos computacionales que superan la comprensión humana directa.</small></li>
+            <li>Iten, R., Metger, T., Wilming, H., del Rio, L., &amp; Renner, R. (2020). <a href="https://doi.org/10.1103/PhysRevLett.124.010508" target="_blank" rel="noopener">Discovering physical concepts with neural networks.</a> <em>Physical Review Letters, 124</em>(1), 010508.<a class="source-link" href="https://doi.org/10.1103/PhysRevLett.124.010508" target="_blank" rel="noopener">https://doi.org/10.1103/PhysRevLett.124.010508 ↗</a><small>Muestra un procedimiento para descubrir conceptos físicos mediante redes neuronales.</small></li>
+            <li>Latour, B. (2001). <a href="https://www.gedisa.com/ficha.aspx?aut=Latour%2C+Bruno&amp;cod=302694&amp;idcol=300&amp;titulo=La-esperanza-de-Pandora" target="_blank" rel="noopener">La esperanza de Pandora: Ensayos sobre la realidad de los estudios de la ciencia.</a> Gedisa.<a class="source-link" href="https://www.gedisa.com/ficha.aspx?aut=Latour%2C+Bruno&amp;cod=302694&amp;idcol=300&amp;titulo=La-esperanza-de-Pandora" target="_blank" rel="noopener">gedisa.com · ficha editorial del libro ↗</a><small>Fuente humanística sobre ciencia, tecnología, mediación y responsabilidad; el libro no utiliza DOI.</small></li>
+            <li>López-Rubio, E. (2020). <a href="https://doi.org/10.1007/s11229-020-02700-5" target="_blank" rel="noopener">Throwing light on black boxes: Emergence of visual categories from deep learning.</a> <em>Synthese</em>.<a class="source-link" href="https://doi.org/10.1007/s11229-020-02700-5" target="_blank" rel="noopener">https://doi.org/10.1007/s11229-020-02700-5 ↗</a><small>Analiza la emergencia de categorías visuales y el problema de explicar “cajas negras”.</small></li>
+          </ol>
+        </div>
       </div>
-    </details>
+    </section>
   </main>
 
   <footer>
